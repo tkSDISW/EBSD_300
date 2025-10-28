@@ -6252,7 +6252,7 @@
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="b1c9f8c6-ac83-42da-958a-5f46d39116ef"
               name="Front Pannel" abstractType="#0618482c-ef30-4d1b-8d0e-6768e9776ff2"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="97c1057f-a47c-4b7b-b238-ced38cc19d27"
-              name="Power Supply" abstractType="#188066ab-2b1f-47f1-84a7-ce1441b4b703"/>
+              name="AC/DC Power Supply" abstractType="#188066ab-2b1f-47f1-84a7-ce1441b4b703"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="312de107-8f3d-4a32-96bf-386bd5cee492"
               name="Fan" abstractType="#2820fcc4-e6c2-49c8-9715-ece05142a225"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="3d01ad9b-7fa6-450c-8de9-e477d9432762"
@@ -6262,9 +6262,15 @@
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="2b0d6725-cd71-403d-b245-c161165b844c"
               name="Chassis" abstractType="#63e3589e-6e49-4245-ab67-66c2bc7f5f5f"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="de7f4959-464b-46fa-99e3-43e67451b2bb"
-              name="Board" abstractType="#13c3136c-7fc7-4b12-b013-610428bf5568"/>
+              name="PCB SC100" abstractType="#13c3136c-7fc7-4b12-b013-610428bf5568"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="e71b3d7a-1bbe-4d4e-804c-d8b4b748694e"
-              name="Board" abstractType="#edce725a-7f8c-443e-bc7a-4d090e1ca67d"/>
+              name="PCB BP100" abstractType="#edce725a-7f8c-443e-bc7a-4d090e1ca67d"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="e47248d4-5868-43a1-8a01-dacfb07d0486"
+              name="PCB MS401" abstractType="#08f0942d-3758-4f7c-8b77-93e380269300"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="60d35cc0-f6f3-4e42-aca2-6a8323b23848"
+              name="PCB LP220" abstractType="#3baf7dc5-14f0-4bb6-bbd2-15b47a2c5f17"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="000b0336-c7bd-47c4-8f58-7d8b93f82537"
+              name="PCB EL 100" abstractType="#422f743c-98d0-4ccb-bceb-e496acfb1dce"/>
           <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
               id="87775f2a-db4c-408e-ac44-2d704eb0b5a7" targetElement="#0f14bac5-8f86-4f18-adc7-0adc5b104673"
               sourceElement="#2db4d6dc-e693-4c70-a159-0b2056b3ae3e"/>
@@ -6288,6 +6294,24 @@
               id="183a646b-253a-41dc-9d39-83a7537364af" name="P" linkEnds="#c00159be-f30c-42db-aac0-c4122ddbbd2f #d6449725-fb8e-441d-8bbb-d2cf3195e87e"/>
           <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
               id="ac86174c-ac0b-45c6-a239-713d45bdad56" name="E-" linkEnds="#f00f8890-2cc9-44ac-95b6-e841068ed4dd #868d1f68-f9a0-4dd2-88ab-92ea4ae719a3"/>
+          <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+              id="74167594-8518-487c-a394-657c9577756a" name="PL 13" linkEnds="#b6a7fc92-25dd-4d2a-8487-ef561d0127a5 #45fb5937-ea1e-4924-8804-45f4df4adb37"/>
+          <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+              id="d5a58464-238e-4b02-95a3-853c14b81522" name="E" linkEnds="#13f181c1-f6fb-4056-b3df-37db7133dffa #041aea41-61e3-4753-bad4-48914a8fbf40"/>
+          <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+              id="dc078896-0b31-4a4a-b59d-beee398fa11b" name="E" linkEnds="#f292f792-257b-4dc5-b6db-e9d0e2e3227c #26b5a31f-b680-45e8-b84a-a9a01302f4c0"/>
+          <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+              id="9ba77f2c-d965-4e15-a2a6-ba0097faffb5" name="E" linkEnds="#4904080b-8267-40e8-9fad-33c1cbbde1e2 #9914c9c6-2b79-46f3-a26f-7a8e9d5c70d4"/>
+          <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+              id="a7d2b687-1c34-40e0-81a1-164e86d91cfe" name="E" linkEnds="#598f7eab-0dee-45bf-ba88-4a53592ca4fc #b9b2c349-739f-49a7-8fb7-89bab9757e0b"/>
+          <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+              id="8ef5a90a-94fb-46f1-b88a-98d462842c34" name="PL 16" linkEnds="#b5cc93a7-2a51-495d-b563-a0636e2a6ae1 #3d4eb2f5-0669-408f-bd38-e086c82966b4"/>
+          <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+              id="c69dcf98-768c-422e-8c07-5ca5846b251a" name="PL 17" linkEnds="#a910efd4-6651-4376-aefb-17ebdd6edd33 #1c8fe1f9-c512-4dad-9e08-cc4e04a1ee0b"/>
+          <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+              id="b8caeb8d-6469-4a95-93fd-1ea306fdcb11" name="PL 18" linkEnds="#9e457ae8-2385-4b96-9f5d-a474a1b323d4 #59de5352-c6e9-4458-b005-f7d55a87342c"/>
+          <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+              id="98880c75-3104-4bfc-935a-31f04298773e" name="PL 19" linkEnds="#38e8ddf6-386b-48f7-a253-3645746d4daa #73198378-123b-40bd-a76b-35504698d051"/>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
               id="0618482c-ef30-4d1b-8d0e-6768e9776ff2" name="Front Pannel" nature="NODE">
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
@@ -6298,11 +6322,16 @@
                 id="5f4eced9-ee66-4be3-9aa0-621ca5f29fa2" name="PP 3"/>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-              id="188066ab-2b1f-47f1-84a7-ce1441b4b703" name="Power Supply" nature="NODE">
+              id="188066ab-2b1f-47f1-84a7-ce1441b4b703" description="&lt;p>400W@ 250LFM&lt;/p>&#xA;"
+              name="AC/DC Power Supply" nature="NODE">
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                 id="8b8ec8e7-2019-4438-9fc4-785ebc8f17b7" name="PP 1"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                 id="a0779a1a-c877-456d-b35e-2467a0f410d9" name="PP 2"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                id="89982002-57be-4879-b4ea-b7d9227bb728" name="PP 3"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                id="b6a7fc92-25dd-4d2a-8487-ef561d0127a5" name="PP 4"/>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
               id="2820fcc4-e6c2-49c8-9715-ece05142a225" name="Fan" nature="NODE">
@@ -6310,6 +6339,8 @@
                 id="027f19b7-aad1-4e92-93d5-eb722a6f4104" name="PP 1"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                 id="304d5d25-ea11-4767-b649-0b44df147927" name="PP 2"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                id="67c82937-31d2-4ca9-9f28-fa3d49822203" name="PP 3"/>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
               id="f51b752a-b63b-4770-88ee-fb5ecd0a6e4f" name="Back Panel" nature="NODE">
@@ -6341,24 +6372,67 @@
                 id="f296f162-f95b-48fe-8565-bbaee80341e3" name="PP 4"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                 id="d6449725-fb8e-441d-8bbb-d2cf3195e87e" name="PP 5"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                id="3d4eb2f5-0669-408f-bd38-e086c82966b4" name="PP 6"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                id="1c8fe1f9-c512-4dad-9e08-cc4e04a1ee0b" name="PP 7"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                id="59de5352-c6e9-4458-b005-f7d55a87342c" name="PP 8"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                id="73198378-123b-40bd-a76b-35504698d051" name="PP 9"/>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-              id="13c3136c-7fc7-4b12-b013-610428bf5568" name="Board" nature="NODE">
+              id="13c3136c-7fc7-4b12-b013-610428bf5568" name="PCB SC100" nature="NODE">
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                 id="f0676a65-155c-48e0-97bd-787d4e48f965" name="PP 1"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                id="868d1f68-f9a0-4dd2-88ab-92ea4ae719a3" name="PP 3"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                 id="aeaae5ba-337e-4d8d-bd21-7abf1fb1aaa9" name="PP 2"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
-                id="868d1f68-f9a0-4dd2-88ab-92ea4ae719a3" name="PP 3"/>
+                id="041aea41-61e3-4753-bad4-48914a8fbf40" name="PP 4"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                id="b5cc93a7-2a51-495d-b563-a0636e2a6ae1" name="PP 5"/>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-              id="edce725a-7f8c-443e-bc7a-4d090e1ca67d" name="Board" nature="NODE">
+              id="edce725a-7f8c-443e-bc7a-4d090e1ca67d" name="PCB BP100" nature="NODE">
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                 id="a57b393a-195b-460b-9d45-792dd038d33c" name="PP 1"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                 id="c00159be-f30c-42db-aac0-c4122ddbbd2f" name="PP 2"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                 id="f00f8890-2cc9-44ac-95b6-e841068ed4dd" name="PP 3"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                id="45fb5937-ea1e-4924-8804-45f4df4adb37" name="PP 10"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                id="13f181c1-f6fb-4056-b3df-37db7133dffa" name="PP 5"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                id="f292f792-257b-4dc5-b6db-e9d0e2e3227c" name="PP 6"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                id="4904080b-8267-40e8-9fad-33c1cbbde1e2" name="PP 7"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                id="598f7eab-0dee-45bf-ba88-4a53592ca4fc" name="PP 8"/>
+          </ownedPhysicalComponents>
+          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+              id="08f0942d-3758-4f7c-8b77-93e380269300" name="PCB MS401" nature="NODE">
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                id="26b5a31f-b680-45e8-b84a-a9a01302f4c0" name="PP 1"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                id="a910efd4-6651-4376-aefb-17ebdd6edd33" name="PP 2"/>
+          </ownedPhysicalComponents>
+          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+              id="3baf7dc5-14f0-4bb6-bbd2-15b47a2c5f17" name="PCB LP220" nature="NODE">
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                id="9914c9c6-2b79-46f3-a26f-7a8e9d5c70d4" name="PP 1"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                id="9e457ae8-2385-4b96-9f5d-a474a1b323d4" name="PP 2"/>
+          </ownedPhysicalComponents>
+          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+              id="422f743c-98d0-4ccb-bceb-e496acfb1dce" name="PCB EL 100" nature="NODE">
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                id="b9b2c349-739f-49a7-8fb7-89bab9757e0b" name="PP 1"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                id="38e8ddf6-386b-48f7-a253-3645746d4daa" name="PP 2"/>
           </ownedPhysicalComponents>
         </ownedPhysicalComponents>
         <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
