@@ -1,0 +1,1128 @@
+# YAML file for Capella objects
+---  
+# YAML file for system model relationships
+model:
+  schema:
+    primary_uuid: Unique identifier for the primary object
+    ref_uuid: Unique identifier for a referenced object
+  objects:
+    - name: '[OCB] Operational Capabilities'
+      type: Diagram
+      primary_uuid: _9lntAK9IEfCjprILT53Jhw
+      description: ""
+      nodes or element :
+      - name: EBSD Software Application
+        ref_uuid: 52072787-ea5e-4bd7-8abb-6b5e4a348c44
+      - name: EBSD Hardware
+        ref_uuid: d10146b8-de75-4787-a05b-6370da284738
+      - name: Detailed Thermal Characterization:
+        ref_uuid: ee405150-7cf9-4b7d-892e-410d10e69061
+      - name: Quick and Easy Testing
+        ref_uuid: 3f0624b1-456d-4f4e-8b22-56986c905deb
+      - name: Accurate Thermal Metrics
+        ref_uuid: 1ce549ec-0312-404a-b102-53b7dd47a11e
+      - name: Automated Quality Assurance
+        ref_uuid: b8fba0f9-6790-4bfc-b19e-56ac6c5baf98
+      - name: Active Power Cycling
+        ref_uuid: 230a941f-2a04-4693-96e7-d52c0c75e412
+      - name: Simulation Model Calibration
+        ref_uuid: ab3e3844-45e7-46ee-a2b1-a53df837aa48
+      - name: [EntityOperationalCapabilityInvolvement] to EBSD Hardware (d10146b8-de75-4787-a05b-6370da284738)
+        ref_uuid: 8796bd6b-736a-47fc-87be-d9760ff23b83
+      - name: [EntityOperationalCapabilityInvolvement] to EBSD Software Application (52072787-ea5e-4bd7-8abb-6b5e4a348c44)
+        ref_uuid: d0b7da9e-6f69-42d8-b543-08495c7139bd
+      - name: [EntityOperationalCapabilityInvolvement] to EBSD Hardware (d10146b8-de75-4787-a05b-6370da284738)
+        ref_uuid: 499ee09d-cc48-4def-b2fa-e0feafbe62dd
+      - name: [EntityOperationalCapabilityInvolvement] to EBSD Software Application (52072787-ea5e-4bd7-8abb-6b5e4a348c44)
+        ref_uuid: 64a688e1-c438-4fc2-8976-32b69211879f
+      - name: [EntityOperationalCapabilityInvolvement] to EBSD Software Application (52072787-ea5e-4bd7-8abb-6b5e4a348c44)
+        ref_uuid: 1a097afe-9460-4ada-ac51-26db67155776
+      - name: [EntityOperationalCapabilityInvolvement] to EBSD Software Application (52072787-ea5e-4bd7-8abb-6b5e4a348c44)
+        ref_uuid: 413c9605-ded0-48dd-815e-319d71dd5f4f
+      - name: [EntityOperationalCapabilityInvolvement] to EBSD Software Application (52072787-ea5e-4bd7-8abb-6b5e4a348c44)
+        ref_uuid: 06468877-1d90-4e7d-9a6e-034a67e5e123
+      - name: [EntityOperationalCapabilityInvolvement] to EBSD Software Application (52072787-ea5e-4bd7-8abb-6b5e4a348c44)
+        ref_uuid: 7ab0ab87-aa98-493c-82c5-4f709b3e83f3
+      - name: [EntityOperationalCapabilityInvolvement] to EBSD Hardware (d10146b8-de75-4787-a05b-6370da284738)
+        ref_uuid: 9f26ad90-956f-46e2-98b0-0fbfd6ec1e6f
+      - name: [EntityOperationalCapabilityInvolvement] to EBSD Hardware (d10146b8-de75-4787-a05b-6370da284738)
+        ref_uuid: dac100fe-fa15-4729-a0fc-7e76b7217710
+      - name: [EntityOperationalCapabilityInvolvement] to EBSD Hardware (d10146b8-de75-4787-a05b-6370da284738)
+        ref_uuid: 8915f5e3-d201-48f7-a7c6-aef059d25e3c
+      - name: [EntityOperationalCapabilityInvolvement] to EBSD Hardware (d10146b8-de75-4787-a05b-6370da284738)
+        ref_uuid: fbbb144d-7816-4418-bf50-6b82e75219b5
+      - name: EBSD User
+        ref_uuid: 095a64b7-152c-4f4a-b32d-412938521b4e
+      - name: Automotive Manufacture
+        ref_uuid: f6116b94-7b01-499a-be14-5786c072ea38
+      - name: Automotive Engineers
+        ref_uuid: f417b3c3-6a07-4568-8489-82383038bc64
+      - name: Semiconductor Designers
+        ref_uuid: 90290b12-8862-4705-8b6a-38bbc7db329c
+      - name: Energy Sector Professionals
+        ref_uuid: ebfc44f8-706d-4b83-bfa5-a42fefcea048
+      - name: Academic Researchers
+        ref_uuid: 7069256d-2c5c-486b-bac0-3c749313bb58
+      - name: Quality Assurance Team
+        ref_uuid: 011d4730-0d00-44af-a5a4-a318e84c6dae
+      - name: Product Development Teams
+        ref_uuid: a0df5531-5889-41d7-ac0e-e82480ff6b54
+      - name: [EntityOperationalCapabilityInvolvement] to EBSD User (095a64b7-152c-4f4a-b32d-412938521b4e)
+        ref_uuid: 43b4c2db-422f-4db2-9c38-500fd516ea97
+      - name: [EntityOperationalCapabilityInvolvement] to EBSD User (095a64b7-152c-4f4a-b32d-412938521b4e)
+        ref_uuid: c54ccd6a-ff12-443e-8c15-49c7a447a84d
+      - name: [EntityOperationalCapabilityInvolvement] to EBSD User (095a64b7-152c-4f4a-b32d-412938521b4e)
+        ref_uuid: 845e1543-e1ac-4352-b2a4-a3a65b3e6ac4
+      - name: [EntityOperationalCapabilityInvolvement] to EBSD User (095a64b7-152c-4f4a-b32d-412938521b4e)
+        ref_uuid: f1fd4cde-8a16-4afa-b4b6-8a9117a36262
+      - name: [EntityOperationalCapabilityInvolvement] to EBSD User (095a64b7-152c-4f4a-b32d-412938521b4e)
+        ref_uuid: f3caae84-93d9-4703-90bf-87e3acf412dd
+      - name: [EntityOperationalCapabilityInvolvement] to EBSD User (095a64b7-152c-4f4a-b32d-412938521b4e)
+        ref_uuid: 41d2a5f0-72a1-4f47-9a25-7cc9f3c11771
+      - name: 
+        ref_uuid: c558f5b9-eb87-4459-8f20-b3a9f2ee281f
+      - name: 
+        ref_uuid: 4e431a39-aea1-4020-aa02-dd115bbe3158
+      - name: Production Line
+        ref_uuid: 8ff28178-18b3-4019-9f36-9cda1f7be984
+      - name: [EntityOperationalCapabilityInvolvement] to Production Line (8ff28178-18b3-4019-9f36-9cda1f7be984)
+        ref_uuid: 94dfcd1b-547d-42c6-b534-8e6a79f315ec
+      - name: Simulation Models
+        ref_uuid: 3b3581f3-460d-4f4c-8e32-2e0f68bec973
+      - name: [EntityOperationalCapabilityInvolvement] to Simulation Models (3b3581f3-460d-4f4c-8e32-2e0f68bec973)
+        ref_uuid: c9e06c04-d0f7-4025-8624-c237fb424b53
+      - name: 
+        ref_uuid: 0099d057-d948-43d6-afed-ae550480adae
+      - name: System Under Test
+        ref_uuid: 542a9e4a-35ee-4020-b4b1-35f2decef8b0
+      - name: [EntityOperationalCapabilityInvolvement] to System Under Test (542a9e4a-35ee-4020-b4b1-35f2decef8b0)
+        ref_uuid: 8ed08b8a-8201-4e7e-8bb1-e63b24def2b5
+      - name: [EntityOperationalCapabilityInvolvement] to System Under Test (542a9e4a-35ee-4020-b4b1-35f2decef8b0)
+        ref_uuid: 9517b851-3b3b-4d19-80fd-f08a2128db41
+    - name: EBSD Software Application
+      type: Entity
+      primary_uuid: 52072787-ea5e-4bd7-8abb-6b5e4a348c44
+      description: ""
+      is_human: False
+      is_actor: False
+      entities:
+      allocated activities:
+       - name: Measure Junction Temperatures
+         ref_uuid: 28c15c32-3dcf-4cc3-90a1-bc165e6376a8
+       - name: Apply Power Step
+         ref_uuid: 964e4bda-d244-4b10-b6f3-5de0f7247c91
+       - name: Launch Power Step Test
+         ref_uuid: e0cab056-8c19-4c4f-8e47-7490f0565f69
+       - name: Perform Analysis 
+         ref_uuid: adf870b5-adbd-4523-917d-888891e32364
+       - name: Perform EOL Testing
+         ref_uuid: 1a7bae56-1735-4eba-aba2-a42890ee29cc
+       - name: Perform Active Power Cycling
+         ref_uuid: 61439cab-382a-4f33-bbc5-7172b6c9f057
+       - name: Monitor Degradation
+         ref_uuid: 2d6e5afd-4cd6-445c-9577-21e54763765b
+       - name: Prepare Simulation Data
+         ref_uuid: 84bd5fe6-5535-4014-963b-377796fab70b
+    - name: EBSD Hardware
+      type: Entity
+      primary_uuid: d10146b8-de75-4787-a05b-6370da284738
+      description: ""
+      is_human: False
+      is_actor: False
+      entities:
+      allocated activities:
+       - name: Collect Thermal Data
+         ref_uuid: c410ca1e-2768-4da5-9eb4-b722a36492e8
+       - name: Drive Hardeware Under Test with Power
+         ref_uuid: 4b26380c-461e-4f93-bdeb-90d7d2bd3941
+       - name: Monitor  Test Request
+         ref_uuid: 94d0b808-9b18-4698-acca-2057c0e9a4f2
+    - name: Detailed Thermal Characterization:
+      type: OperationalCapability
+      primary_uuid: ee405150-7cf9-4b7d-892e-410d10e69061
+      description: "&lt;p&gt;Provides nondestructive testing methods to accurately measure junction temperatures and characterize the internal thermal structure of electronic components.&lt;/p&gt; "
+      included capability:
+       - name: Accurate Thermal Metrics
+         ref_uuid: 1ce549ec-0312-404a-b102-53b7dd47a11e
+    - name: Quick and Easy Testing
+      type: OperationalCapability
+      primary_uuid: 3f0624b1-456d-4f4e-8b22-56986c905deb
+      description: "&lt;p&gt;Utilizes thermal transient testing methods that are easy to apply, even for complex designs, and suitable for high-volume testing.&lt;/p&gt; "
+      included capability:
+       - name: Accurate Thermal Metrics
+         ref_uuid: 1ce549ec-0312-404a-b102-53b7dd47a11e
+    - name: Accurate Thermal Metrics
+      type: OperationalCapability
+      primary_uuid: 1ce549ec-0312-404a-b102-53b7dd47a11e
+      description: "&lt;p&gt;Delivers precise values for junction temperatures and thermal resistance metrics, compliant with JEDEC standards.&lt;/p&gt; "
+    - name: Automated Quality Assurance
+      type: OperationalCapability
+      primary_uuid: b8fba0f9-6790-4bfc-b19e-56ac6c5baf98
+      description: "&lt;p&gt;Integrates with production lines for end-of-line testing, ensuring zero-defect production through automated thermal testing and quality binning.&lt;/p&gt; "
+    - name: Active Power Cycling
+      type: OperationalCapability
+      primary_uuid: 230a941f-2a04-4693-96e7-d52c0c75e412
+      description: "&lt;p&gt;Combines power cycling with thermal degradation monitoring to assess the reliability and lifetime of power electronics.&lt;/p&gt; "
+    - name: Simulation Model Calibration
+      type: OperationalCapability
+      primary_uuid: ab3e3844-45e7-46ee-a2b1-a53df837aa48
+      description: "&lt;p&gt;Enhances the accuracy of thermal simulation models by calibrating them with real-world measurement data.&lt;/p&gt; "
+      included capability:
+       - name: Detailed Thermal Characterization:
+         ref_uuid: ee405150-7cf9-4b7d-892e-410d10e69061
+    - name: [EntityOperationalCapabilityInvolvement] to EBSD Hardware (d10146b8-de75-4787-a05b-6370da284738)
+      type: EntityOperationalCapabilityInvolvement
+      primary_uuid: 8796bd6b-736a-47fc-87be-d9760ff23b83
+      description: ""
+    - name: [EntityOperationalCapabilityInvolvement] to EBSD Software Application (52072787-ea5e-4bd7-8abb-6b5e4a348c44)
+      type: EntityOperationalCapabilityInvolvement
+      primary_uuid: d0b7da9e-6f69-42d8-b543-08495c7139bd
+      description: ""
+    - name: [EntityOperationalCapabilityInvolvement] to EBSD Hardware (d10146b8-de75-4787-a05b-6370da284738)
+      type: EntityOperationalCapabilityInvolvement
+      primary_uuid: 499ee09d-cc48-4def-b2fa-e0feafbe62dd
+      description: ""
+    - name: [EntityOperationalCapabilityInvolvement] to EBSD Software Application (52072787-ea5e-4bd7-8abb-6b5e4a348c44)
+      type: EntityOperationalCapabilityInvolvement
+      primary_uuid: 64a688e1-c438-4fc2-8976-32b69211879f
+      description: ""
+    - name: [EntityOperationalCapabilityInvolvement] to EBSD Software Application (52072787-ea5e-4bd7-8abb-6b5e4a348c44)
+      type: EntityOperationalCapabilityInvolvement
+      primary_uuid: 1a097afe-9460-4ada-ac51-26db67155776
+      description: ""
+    - name: [EntityOperationalCapabilityInvolvement] to EBSD Software Application (52072787-ea5e-4bd7-8abb-6b5e4a348c44)
+      type: EntityOperationalCapabilityInvolvement
+      primary_uuid: 413c9605-ded0-48dd-815e-319d71dd5f4f
+      description: ""
+    - name: [EntityOperationalCapabilityInvolvement] to EBSD Software Application (52072787-ea5e-4bd7-8abb-6b5e4a348c44)
+      type: EntityOperationalCapabilityInvolvement
+      primary_uuid: 06468877-1d90-4e7d-9a6e-034a67e5e123
+      description: ""
+    - name: [EntityOperationalCapabilityInvolvement] to EBSD Software Application (52072787-ea5e-4bd7-8abb-6b5e4a348c44)
+      type: EntityOperationalCapabilityInvolvement
+      primary_uuid: 7ab0ab87-aa98-493c-82c5-4f709b3e83f3
+      description: ""
+    - name: [EntityOperationalCapabilityInvolvement] to EBSD Hardware (d10146b8-de75-4787-a05b-6370da284738)
+      type: EntityOperationalCapabilityInvolvement
+      primary_uuid: 9f26ad90-956f-46e2-98b0-0fbfd6ec1e6f
+      description: ""
+    - name: [EntityOperationalCapabilityInvolvement] to EBSD Hardware (d10146b8-de75-4787-a05b-6370da284738)
+      type: EntityOperationalCapabilityInvolvement
+      primary_uuid: dac100fe-fa15-4729-a0fc-7e76b7217710
+      description: ""
+    - name: [EntityOperationalCapabilityInvolvement] to EBSD Hardware (d10146b8-de75-4787-a05b-6370da284738)
+      type: EntityOperationalCapabilityInvolvement
+      primary_uuid: 8915f5e3-d201-48f7-a7c6-aef059d25e3c
+      description: ""
+    - name: [EntityOperationalCapabilityInvolvement] to EBSD Hardware (d10146b8-de75-4787-a05b-6370da284738)
+      type: EntityOperationalCapabilityInvolvement
+      primary_uuid: fbbb144d-7816-4418-bf50-6b82e75219b5
+      description: ""
+    - name: EBSD User
+      type: Entity
+      primary_uuid: 095a64b7-152c-4f4a-b32d-412938521b4e
+      description: ""
+      is_human: False
+      is_actor: False
+      entities:
+       - component Automotive Manufacture
+         ref_uuid: f6116b94-7b01-499a-be14-5786c072ea38
+       - component Automotive Engineers
+         ref_uuid: f417b3c3-6a07-4568-8489-82383038bc64
+       - component Semiconductor Designers
+         ref_uuid: 90290b12-8862-4705-8b6a-38bbc7db329c
+       - component Energy Sector Professionals
+         ref_uuid: ebfc44f8-706d-4b83-bfa5-a42fefcea048
+       - component Academic Researchers
+         ref_uuid: 7069256d-2c5c-486b-bac0-3c749313bb58
+       - component Quality Assurance Team
+         ref_uuid: 011d4730-0d00-44af-a5a4-a318e84c6dae
+       - component Product Development Teams
+         ref_uuid: a0df5531-5889-41d7-ac0e-e82480ff6b54
+      allocated activities:
+       - name:  Initiate Thermal Testing
+         ref_uuid: 166a318b-8241-48b4-98b3-e7e4a4d20068
+       - name: Start Transient Testing
+         ref_uuid: 2db85911-ab09-4e68-9ac7-c41c22839ced
+       - name: Analyze Data
+         ref_uuid: 6ad1c245-31db-4819-86ad-ae293f6cd599
+       - name: Enable Quality Test
+         ref_uuid: 9a349629-620f-4fd4-b3f1-94638d5cf832
+       - name: Initiate Power Cycling
+         ref_uuid: f1705ddb-05fe-495e-9c1a-9a79ce27bdc8
+       - name: Create Simulation Data
+         ref_uuid: fdf0bad1-d57b-4245-8b8c-7e98a0cf2dfc
+    - name: Automotive Manufacture
+      type: Entity
+      primary_uuid: f6116b94-7b01-499a-be14-5786c072ea38
+      description: "&lt;p&gt;Utilize&amp;nbsp;EBSD for designing and validating thermal performance of electronic components, ensuring reliability and efficiency.&lt;/p&gt; "
+      is_human: False
+      is_actor: False
+      entities:
+      allocated activities:
+    - name: Automotive Engineers
+      type: Entity
+      primary_uuid: f417b3c3-6a07-4568-8489-82383038bc64
+      description: "&lt;p&gt;Leverage the product to test and optimize the thermal management of power electronics in hybrid and electric vehicles.&lt;/p&gt; "
+      is_human: False
+      is_actor: False
+      entities:
+      allocated activities:
+    - name: Semiconductor Designers
+      type: Entity
+      primary_uuid: 90290b12-8862-4705-8b6a-38bbc7db329c
+      description: "&lt;p&gt;Use&amp;nbsp;EBSD to characterize and improve the thermal performance of IC packages and semiconductor devices.&lt;/p&gt; "
+      is_human: False
+      is_actor: False
+      entities:
+      allocated activities:
+    - name: Energy Sector Professionals
+      type: Entity
+      primary_uuid: ebfc44f8-706d-4b83-bfa5-a42fefcea048
+      description: "&lt;p&gt;Apply the product to enhance the reliability and efficiency of power electronics in renewable energy systems&lt;/p&gt; "
+      is_human: False
+      is_actor: False
+      entities:
+      allocated activities:
+    - name: Academic Researchers
+      type: Entity
+      primary_uuid: 7069256d-2c5c-486b-bac0-3c749313bb58
+      description: "&lt;p&gt;Engage with EBSD&amp;nbsp;for research and development of new electronic designs and materials, facilitating a deeper understanding of thermal behaviors.&lt;/p&gt; "
+      is_human: False
+      is_actor: False
+      entities:
+      allocated activities:
+    - name: Quality Assurance Team
+      type: Entity
+      primary_uuid: 011d4730-0d00-44af-a5a4-a318e84c6dae
+      description: "&lt;p&gt;Implement automated thermal testing to ensure zero-defect production and maintain high-quality standards in manufacturing processes.&lt;/p&gt; "
+      is_human: False
+      is_actor: False
+      entities:
+      allocated activities:
+    - name: Product Development Teams
+      type: Entity
+      primary_uuid: a0df5531-5889-41d7-ac0e-e82480ff6b54
+      description: "&lt;p&gt;Integrate&amp;nbsp;EBSD into the design cycle to build accurate thermal simulation models and optimize product designs.&lt;/p&gt; "
+      is_human: False
+      is_actor: False
+      entities:
+      allocated activities:
+    - name: [EntityOperationalCapabilityInvolvement] to EBSD User (095a64b7-152c-4f4a-b32d-412938521b4e)
+      type: EntityOperationalCapabilityInvolvement
+      primary_uuid: 43b4c2db-422f-4db2-9c38-500fd516ea97
+      description: ""
+    - name: [EntityOperationalCapabilityInvolvement] to EBSD User (095a64b7-152c-4f4a-b32d-412938521b4e)
+      type: EntityOperationalCapabilityInvolvement
+      primary_uuid: c54ccd6a-ff12-443e-8c15-49c7a447a84d
+      description: ""
+    - name: [EntityOperationalCapabilityInvolvement] to EBSD User (095a64b7-152c-4f4a-b32d-412938521b4e)
+      type: EntityOperationalCapabilityInvolvement
+      primary_uuid: 845e1543-e1ac-4352-b2a4-a3a65b3e6ac4
+      description: ""
+    - name: [EntityOperationalCapabilityInvolvement] to EBSD User (095a64b7-152c-4f4a-b32d-412938521b4e)
+      type: EntityOperationalCapabilityInvolvement
+      primary_uuid: f1fd4cde-8a16-4afa-b4b6-8a9117a36262
+      description: ""
+    - name: [EntityOperationalCapabilityInvolvement] to EBSD User (095a64b7-152c-4f4a-b32d-412938521b4e)
+      type: EntityOperationalCapabilityInvolvement
+      primary_uuid: f3caae84-93d9-4703-90bf-87e3acf412dd
+      description: ""
+    - name: [EntityOperationalCapabilityInvolvement] to EBSD User (095a64b7-152c-4f4a-b32d-412938521b4e)
+      type: EntityOperationalCapabilityInvolvement
+      primary_uuid: 41d2a5f0-72a1-4f47-9a25-7cc9f3c11771
+      description: ""
+    - name: 
+      type: AbstractCapabilityInclude
+      primary_uuid: c558f5b9-eb87-4459-8f20-b3a9f2ee281f
+      description: ""
+    - name: 
+      type: AbstractCapabilityInclude
+      primary_uuid: 4e431a39-aea1-4020-aa02-dd115bbe3158
+      description: ""
+    - name: Production Line
+      type: Entity
+      primary_uuid: 8ff28178-18b3-4019-9f36-9cda1f7be984
+      description: ""
+      is_human: False
+      is_actor: False
+      entities:
+      allocated activities:
+       - name: Trigger Quality Test
+         ref_uuid: d0d23399-8e23-437a-86d2-31ea2c0b9475
+    - name: [EntityOperationalCapabilityInvolvement] to Production Line (8ff28178-18b3-4019-9f36-9cda1f7be984)
+      type: EntityOperationalCapabilityInvolvement
+      primary_uuid: 94dfcd1b-547d-42c6-b534-8e6a79f315ec
+      description: ""
+    - name: Simulation Models
+      type: Entity
+      primary_uuid: 3b3581f3-460d-4f4c-8e32-2e0f68bec973
+      description: ""
+      is_human: False
+      is_actor: False
+      entities:
+      allocated activities:
+       - name: Receive Calibration Data
+         ref_uuid: 3be12414-5253-428b-aabf-0f8d93be19a8
+    - name: [EntityOperationalCapabilityInvolvement] to Simulation Models (3b3581f3-460d-4f4c-8e32-2e0f68bec973)
+      type: EntityOperationalCapabilityInvolvement
+      primary_uuid: c9e06c04-d0f7-4025-8624-c237fb424b53
+      description: ""
+    - name: 
+      type: AbstractCapabilityInclude
+      primary_uuid: 0099d057-d948-43d6-afed-ae550480adae
+      description: ""
+    - name: System Under Test
+      type: Entity
+      primary_uuid: 542a9e4a-35ee-4020-b4b1-35f2decef8b0
+      description: ""
+      is_human: False
+      is_actor: False
+      entities:
+      allocated activities:
+       - name: Provide Source of Measurement
+         ref_uuid: 651cf361-1d4c-4c7b-afc3-0b73cca502a8
+       - name: Receive Stimulus
+         ref_uuid: aa9ce436-6985-4f61-997c-e9b6f1520af5
+    - name: [EntityOperationalCapabilityInvolvement] to System Under Test (542a9e4a-35ee-4020-b4b1-35f2decef8b0)
+      type: EntityOperationalCapabilityInvolvement
+      primary_uuid: 8ed08b8a-8201-4e7e-8bb1-e63b24def2b5
+      description: ""
+    - name: [EntityOperationalCapabilityInvolvement] to System Under Test (542a9e4a-35ee-4020-b4b1-35f2decef8b0)
+      type: EntityOperationalCapabilityInvolvement
+      primary_uuid: 9517b851-3b3b-4d19-80fd-f08a2128db41
+      description: ""
+    - name: Measure Junction Temperatures
+      type: OperationalActivity
+      primary_uuid: 28c15c32-3dcf-4cc3-90a1-bc165e6376a8
+      description: "&lt;p&gt;Use&amp;nbsp;EBSD solutions to perform nondestructive electrical tests compliant with JEDEC 51 standard, providing accurate junction temperatures and characterizing the internal thermal structure.&lt;/p&gt; "
+      owner:
+       - name: EBSD Software Application
+         ref_uuid: 52072787-ea5e-4bd7-8abb-6b5e4a348c44
+      activities owned:
+      inputs to:
+       - name: User Interactions
+         ref_uuid: e21c8089-f64d-4c02-b099-8638bd0324d0
+         exchanges:
+       - name: Action
+         ref_uuid: a2b185a2-b931-4f35-bb70-37fc91aa5662
+         exchanges:
+       - name: Measure
+         ref_uuid: 759337e2-c7c5-4b35-833c-4f61a04a6d86
+         exchanges:
+       - name: Monitor
+         ref_uuid: 8ad68ef0-4ad5-4595-9a00-c9cf91ce1dc7
+         exchanges:
+      outputs from:
+       - name: Gather Data
+         ref_uuid: 06ea5620-634f-41ad-bdde-876773eb9a00
+         exchanges:
+       - name: Data
+         ref_uuid: 200e1f0c-22fe-4b17-84af-457615452387
+         exchanges:
+    - name: Apply Power Step
+      type: OperationalActivity
+      primary_uuid: 964e4bda-d244-4b10-b6f3-5de0f7247c91
+      description: "&lt;p&gt;Apply a power step to the device under test (DUT) to induce a thermal transient response, measuring the transient change of junction temperature accurately.&lt;/p&gt; "
+      owner:
+       - name: EBSD Software Application
+         ref_uuid: 52072787-ea5e-4bd7-8abb-6b5e4a348c44
+      activities owned:
+      inputs to:
+       - name: Acrion
+         ref_uuid: ce6e1b94-42af-40cd-8a49-965e38c23cc6
+         exchanges:
+       - name: Drive
+         ref_uuid: 48af8ffd-b9c6-436b-8964-82d6ac8c5376
+         exchanges:
+       - name: Drive Power
+         ref_uuid: 23feb239-bff6-492a-9d3c-6a35b0249027
+         exchanges:
+      outputs from:
+       - name: Drive System
+         ref_uuid: 9a384519-1661-4f2c-b08d-e6efab915b6c
+         exchanges:
+    - name: Launch Power Step Test
+      type: OperationalActivity
+      primary_uuid: e0cab056-8c19-4c4f-8e47-7490f0565f69
+      description: ""
+      owner:
+       - name: EBSD Software Application
+         ref_uuid: 52072787-ea5e-4bd7-8abb-6b5e4a348c44
+      activities owned:
+      inputs to:
+       - name: User interaction
+         ref_uuid: 3ce755b6-0ad6-4a2a-9611-1cd2ce903744
+         exchanges:
+      outputs from:
+       - name: Acrion
+         ref_uuid: ce6e1b94-42af-40cd-8a49-965e38c23cc6
+         exchanges:
+       - name: Action
+         ref_uuid: a2b185a2-b931-4f35-bb70-37fc91aa5662
+         exchanges:
+    - name: Perform Analysis 
+      type: OperationalActivity
+      primary_uuid: adf870b5-adbd-4523-917d-888891e32364
+      description: ""
+      owner:
+       - name: EBSD Software Application
+         ref_uuid: 52072787-ea5e-4bd7-8abb-6b5e4a348c44
+      activities owned:
+      inputs to:
+       - name: Analysis 
+         ref_uuid: 60cd2f3c-c823-43c5-b5d0-5653714bcbb1
+         exchanges:
+       - name: Data
+         ref_uuid: 200e1f0c-22fe-4b17-84af-457615452387
+         exchanges:
+       - name: Analyze
+         ref_uuid: 5babecae-1b50-4b60-a8b8-c8f05f5c99d0
+         exchanges:
+       - name: Gather Analysis Data
+         ref_uuid: da0cda0a-e018-407c-bdc7-df138ad5a180
+         exchanges:
+      outputs from:
+    - name: Perform EOL Testing
+      type: OperationalActivity
+      primary_uuid: 1a7bae56-1735-4eba-aba2-a42890ee29cc
+      description: ""
+      owner:
+       - name: EBSD Software Application
+         ref_uuid: 52072787-ea5e-4bd7-8abb-6b5e4a348c44
+      activities owned:
+      inputs to:
+       - name: User Interaction
+         ref_uuid: f7936348-1c11-4cdd-8389-c802366ebce7
+         exchanges:
+      outputs from:
+       - name: Gather Test Request
+         ref_uuid: fd362107-a6be-4ae3-b2ef-aa216d93d224
+         exchanges:
+       - name: Analyze
+         ref_uuid: 5babecae-1b50-4b60-a8b8-c8f05f5c99d0
+         exchanges:
+       - name: Drive
+         ref_uuid: 48af8ffd-b9c6-436b-8964-82d6ac8c5376
+         exchanges:
+       - name: Measure
+         ref_uuid: 759337e2-c7c5-4b35-833c-4f61a04a6d86
+         exchanges:
+    - name: Perform Active Power Cycling
+      type: OperationalActivity
+      primary_uuid: 61439cab-382a-4f33-bbc5-7172b6c9f057
+      description: ""
+      owner:
+       - name: EBSD Software Application
+         ref_uuid: 52072787-ea5e-4bd7-8abb-6b5e4a348c44
+      activities owned:
+      inputs to:
+       - name: User Interaction
+         ref_uuid: b906d1c3-d4fd-4ba9-acc1-73dac58f20a8
+         exchanges:
+      outputs from:
+       - name: Monitor
+         ref_uuid: 29a1adc3-6801-426f-aad0-72efdaf076fa
+         exchanges:
+       - name: Drive Power
+         ref_uuid: 23feb239-bff6-492a-9d3c-6a35b0249027
+         exchanges:
+    - name: Monitor Degradation
+      type: OperationalActivity
+      primary_uuid: 2d6e5afd-4cd6-445c-9577-21e54763765b
+      description: ""
+      owner:
+       - name: EBSD Software Application
+         ref_uuid: 52072787-ea5e-4bd7-8abb-6b5e4a348c44
+      activities owned:
+      inputs to:
+       - name: Monitor
+         ref_uuid: 29a1adc3-6801-426f-aad0-72efdaf076fa
+         exchanges:
+      outputs from:
+       - name: Monitor
+         ref_uuid: 8ad68ef0-4ad5-4595-9a00-c9cf91ce1dc7
+         exchanges:
+    - name: Prepare Simulation Data
+      type: OperationalActivity
+      primary_uuid: 84bd5fe6-5535-4014-963b-377796fab70b
+      description: ""
+      owner:
+       - name: EBSD Software Application
+         ref_uuid: 52072787-ea5e-4bd7-8abb-6b5e4a348c44
+      activities owned:
+      inputs to:
+       - name: Intraction
+         ref_uuid: 0c94f3e4-8990-40ca-b70e-4fc349f01c50
+         exchanges:
+      outputs from:
+       - name: Simulaton Data
+         ref_uuid: 7fa71cac-f914-4b44-a2c1-720a60190603
+         exchanges:
+       - name: Gather Analysis Data
+         ref_uuid: da0cda0a-e018-407c-bdc7-df138ad5a180
+         exchanges:
+    - name: Collect Thermal Data
+      type: OperationalActivity
+      primary_uuid: c410ca1e-2768-4da5-9eb4-b722a36492e8
+      description: ""
+      owner:
+       - name: EBSD Hardware
+         ref_uuid: d10146b8-de75-4787-a05b-6370da284738
+      activities owned:
+      inputs to:
+       - name: Gather Data
+         ref_uuid: 06ea5620-634f-41ad-bdde-876773eb9a00
+         exchanges:
+       - name: Themal Data
+         ref_uuid: 366ebef4-c5a2-4b58-8a47-950f238c9af8
+         exchanges:
+      outputs from:
+    - name: Drive Hardeware Under Test with Power
+      type: OperationalActivity
+      primary_uuid: 4b26380c-461e-4f93-bdeb-90d7d2bd3941
+      description: ""
+      owner:
+       - name: EBSD Hardware
+         ref_uuid: d10146b8-de75-4787-a05b-6370da284738
+      activities owned:
+      inputs to:
+       - name: Drive System
+         ref_uuid: 9a384519-1661-4f2c-b08d-e6efab915b6c
+         exchanges:
+      outputs from:
+       - name: Stimulus
+         ref_uuid: 58dcbb7b-fa49-41a6-a5e1-94798e189fba
+         exchanges:
+    - name: Monitor  Test Request
+      type: OperationalActivity
+      primary_uuid: 94d0b808-9b18-4698-acca-2057c0e9a4f2
+      description: ""
+      owner:
+       - name: EBSD Hardware
+         ref_uuid: d10146b8-de75-4787-a05b-6370da284738
+      activities owned:
+      inputs to:
+       - name: Test Request
+         ref_uuid: fcfd814b-e01a-4e5e-a86f-b7875f473fbb
+         exchanges:
+       - name: Gather Test Request
+         ref_uuid: fd362107-a6be-4ae3-b2ef-aa216d93d224
+         exchanges:
+      outputs from:
+    - name: Detailed Thermal Characterization
+      type: OperationalProcess
+      primary_uuid: 2ccfcec5-7fea-40ee-b249-cdce2b06ae86
+      description: ""
+      involve:
+      - name: Measure Junction Temperatures
+        type: OperationalActivity
+        ref_uuid: 28c15c32-3dcf-4cc3-90a1-bc165e6376a8
+      - name:  Initiate Thermal Testing
+        type: OperationalActivity
+        ref_uuid: 166a318b-8241-48b4-98b3-e7e4a4d20068
+      - name: Collect Thermal Data
+        type: OperationalActivity
+        ref_uuid: c410ca1e-2768-4da5-9eb4-b722a36492e8
+      - name: Provide Source of Measurement
+        type: OperationalActivity
+        ref_uuid: 651cf361-1d4c-4c7b-afc3-0b73cca502a8
+      - name: User Interactions
+        type: FunctionalExchange
+        ref_uuid: e21c8089-f64d-4c02-b099-8638bd0324d0
+      - name: Gather Data
+        type: FunctionalExchange
+        ref_uuid: 06ea5620-634f-41ad-bdde-876773eb9a00
+      - name: Themal Data
+        type: FunctionalExchange
+        ref_uuid: 366ebef4-c5a2-4b58-8a47-950f238c9af8
+    - name: Accurate Themal Metrics
+      type: OperationalProcess
+      primary_uuid: 8bbf49ae-36ea-4ecb-a9a2-604ce63e080a
+      description: "&lt;p&gt;Delivers precise values for junction temperatures and thermal resistance metrics, compliant with JEDEC standards.&lt;/p&gt; "
+      involve:
+      - name: Collect Thermal Data
+        type: OperationalActivity
+        ref_uuid: c410ca1e-2768-4da5-9eb4-b722a36492e8
+      - name: Measure Junction Temperatures
+        type: OperationalActivity
+        ref_uuid: 28c15c32-3dcf-4cc3-90a1-bc165e6376a8
+      - name: Provide Source of Measurement
+        type: OperationalActivity
+        ref_uuid: 651cf361-1d4c-4c7b-afc3-0b73cca502a8
+      - name: Gather Data
+        type: FunctionalExchange
+        ref_uuid: 06ea5620-634f-41ad-bdde-876773eb9a00
+      - name: Themal Data
+        type: FunctionalExchange
+        ref_uuid: 366ebef4-c5a2-4b58-8a47-950f238c9af8
+    - name: Automated Quality Assurance
+      type: OperationalProcess
+      primary_uuid: d4f9639e-5182-4dc0-b364-c3b0ae669d4d
+      description: "&lt;p&gt;Integrates with production lines for end-of-line testing, ensuring zero-defect production through automated thermal testing and quality binning.&lt;/p&gt; "
+      involve:
+      - name: Perform EOL Testing
+        type: OperationalActivity
+        ref_uuid: 1a7bae56-1735-4eba-aba2-a42890ee29cc
+      - name: Enable Quality Test
+        type: OperationalActivity
+        ref_uuid: 9a349629-620f-4fd4-b3f1-94638d5cf832
+      - name: User Interaction
+        type: FunctionalExchange
+        ref_uuid: f7936348-1c11-4cdd-8389-c802366ebce7
+      - name: Measure
+        type: FunctionalExchange
+        ref_uuid: 759337e2-c7c5-4b35-833c-4f61a04a6d86
+      - name: Analyze
+        type: FunctionalExchange
+        ref_uuid: 5babecae-1b50-4b60-a8b8-c8f05f5c99d0
+      - name: Drive
+        type: FunctionalExchange
+        ref_uuid: 48af8ffd-b9c6-436b-8964-82d6ac8c5376
+      - name: Gather Test Request
+        type: FunctionalExchange
+        ref_uuid: fd362107-a6be-4ae3-b2ef-aa216d93d224
+    - name: Active Power Cycling
+      type: OperationalProcess
+      primary_uuid: c3003f9d-1619-4624-a21e-98becb102d48
+      description: ""
+      involve:
+      - name: Perform Active Power Cycling
+        type: OperationalActivity
+        ref_uuid: 61439cab-382a-4f33-bbc5-7172b6c9f057
+      - name: Initiate Power Cycling
+        type: OperationalActivity
+        ref_uuid: f1705ddb-05fe-495e-9c1a-9a79ce27bdc8
+      - name: Monitor Degradation
+        type: OperationalActivity
+        ref_uuid: 2d6e5afd-4cd6-445c-9577-21e54763765b
+      - name: User Interaction
+        type: FunctionalExchange
+        ref_uuid: b906d1c3-d4fd-4ba9-acc1-73dac58f20a8
+      - name: Monitor
+        type: FunctionalExchange
+        ref_uuid: 29a1adc3-6801-426f-aad0-72efdaf076fa
+      - name: Monitor
+        type: FunctionalExchange
+        ref_uuid: 8ad68ef0-4ad5-4595-9a00-c9cf91ce1dc7
+      - name: Drive Power
+        type: FunctionalExchange
+        ref_uuid: 23feb239-bff6-492a-9d3c-6a35b0249027
+    - name: Simulation Model Calbration
+      type: OperationalProcess
+      primary_uuid: d1dee1b3-1bed-4b61-9f68-134962ac1f83
+      description: ""
+      involve:
+      - name: Prepare Simulation Data
+        type: OperationalActivity
+        ref_uuid: 84bd5fe6-5535-4014-963b-377796fab70b
+      - name: Create Simulation Data
+        type: OperationalActivity
+        ref_uuid: fdf0bad1-d57b-4245-8b8c-7e98a0cf2dfc
+      - name: Receive Calibration Data
+        type: OperationalActivity
+        ref_uuid: 3be12414-5253-428b-aabf-0f8d93be19a8
+      - name: Perform Analysis 
+        type: OperationalActivity
+        ref_uuid: adf870b5-adbd-4523-917d-888891e32364
+      - name: Intraction
+        type: FunctionalExchange
+        ref_uuid: 0c94f3e4-8990-40ca-b70e-4fc349f01c50
+      - name: Simulaton Data
+        type: FunctionalExchange
+        ref_uuid: 7fa71cac-f914-4b44-a2c1-720a60190603
+      - name: Gather Analysis Data
+        type: FunctionalExchange
+        ref_uuid: da0cda0a-e018-407c-bdc7-df138ad5a180
+    - name:  Initiate Thermal Testing
+      type: OperationalActivity
+      primary_uuid: 166a318b-8241-48b4-98b3-e7e4a4d20068
+      description: "&lt;p&gt;The EBSD User initiates the thermal testing process using Simcenter Micred solutions to measure junction temperatures and characterize the internal thermal structure.&lt;/p&gt; "
+      owner:
+       - name: EBSD User
+         ref_uuid: 095a64b7-152c-4f4a-b32d-412938521b4e
+      activities owned:
+      inputs to:
+      outputs from:
+       - name: User Interactions
+         ref_uuid: e21c8089-f64d-4c02-b099-8638bd0324d0
+         exchanges:
+       - name: Next
+         ref_uuid: 7fd02fcd-74a4-4784-8476-7bbf9fc843bd
+         exchanges:
+    - name: Start Transient Testing
+      type: OperationalActivity
+      primary_uuid: 2db85911-ab09-4e68-9ac7-c41c22839ced
+      description: "&lt;p&gt;The EBSD User starts the thermal transient testing process using Simcenter Micred solutions to quickly and easily test electronic components.&lt;/p&gt; "
+      owner:
+       - name: EBSD User
+         ref_uuid: 095a64b7-152c-4f4a-b32d-412938521b4e
+      activities owned:
+      inputs to:
+      outputs from:
+       - name: User interaction
+         ref_uuid: 3ce755b6-0ad6-4a2a-9611-1cd2ce903744
+         exchanges:
+       - name: Next
+         ref_uuid: 331cd8f2-b9b9-4469-8e67-33746d7a7b93
+         exchanges:
+    - name: Analyze Data
+      type: OperationalActivity
+      primary_uuid: 6ad1c245-31db-4819-86ad-ae293f6cd599
+      description: ""
+      owner:
+       - name: EBSD User
+         ref_uuid: 095a64b7-152c-4f4a-b32d-412938521b4e
+      activities owned:
+      inputs to:
+       - name: Next
+         ref_uuid: 7fd02fcd-74a4-4784-8476-7bbf9fc843bd
+         exchanges:
+       - name: Next
+         ref_uuid: 331cd8f2-b9b9-4469-8e67-33746d7a7b93
+         exchanges:
+      outputs from:
+       - name: Analysis 
+         ref_uuid: 60cd2f3c-c823-43c5-b5d0-5653714bcbb1
+         exchanges:
+    - name: Enable Quality Test
+      type: OperationalActivity
+      primary_uuid: 9a349629-620f-4fd4-b3f1-94638d5cf832
+      description: ""
+      owner:
+       - name: EBSD User
+         ref_uuid: 095a64b7-152c-4f4a-b32d-412938521b4e
+      activities owned:
+      inputs to:
+      outputs from:
+       - name: User Interaction
+         ref_uuid: f7936348-1c11-4cdd-8389-c802366ebce7
+         exchanges:
+    - name: Initiate Power Cycling
+      type: OperationalActivity
+      primary_uuid: f1705ddb-05fe-495e-9c1a-9a79ce27bdc8
+      description: ""
+      owner:
+       - name: EBSD User
+         ref_uuid: 095a64b7-152c-4f4a-b32d-412938521b4e
+      activities owned:
+      inputs to:
+      outputs from:
+       - name: User Interaction
+         ref_uuid: b906d1c3-d4fd-4ba9-acc1-73dac58f20a8
+         exchanges:
+    - name: Create Simulation Data
+      type: OperationalActivity
+      primary_uuid: fdf0bad1-d57b-4245-8b8c-7e98a0cf2dfc
+      description: ""
+      owner:
+       - name: EBSD User
+         ref_uuid: 095a64b7-152c-4f4a-b32d-412938521b4e
+      activities owned:
+      inputs to:
+      outputs from:
+       - name: Intraction
+         ref_uuid: 0c94f3e4-8990-40ca-b70e-4fc349f01c50
+         exchanges:
+    - name: Trigger Quality Test
+      type: OperationalActivity
+      primary_uuid: d0d23399-8e23-437a-86d2-31ea2c0b9475
+      description: ""
+      owner:
+       - name: Production Line
+         ref_uuid: 8ff28178-18b3-4019-9f36-9cda1f7be984
+      activities owned:
+      inputs to:
+      outputs from:
+       - name: Test Request
+         ref_uuid: fcfd814b-e01a-4e5e-a86f-b7875f473fbb
+         exchanges:
+    - name: Receive Calibration Data
+      type: OperationalActivity
+      primary_uuid: 3be12414-5253-428b-aabf-0f8d93be19a8
+      description: ""
+      owner:
+       - name: Simulation Models
+         ref_uuid: 3b3581f3-460d-4f4c-8e32-2e0f68bec973
+      activities owned:
+      inputs to:
+       - name: Simulaton Data
+         ref_uuid: 7fa71cac-f914-4b44-a2c1-720a60190603
+         exchanges:
+      outputs from:
+    - name: Provide Source of Measurement
+      type: OperationalActivity
+      primary_uuid: 651cf361-1d4c-4c7b-afc3-0b73cca502a8
+      description: ""
+      owner:
+       - name: System Under Test
+         ref_uuid: 542a9e4a-35ee-4020-b4b1-35f2decef8b0
+      activities owned:
+      inputs to:
+      outputs from:
+       - name: Themal Data
+         ref_uuid: 366ebef4-c5a2-4b58-8a47-950f238c9af8
+         exchanges:
+    - name: Receive Stimulus
+      type: OperationalActivity
+      primary_uuid: aa9ce436-6985-4f61-997c-e9b6f1520af5
+      description: ""
+      owner:
+       - name: System Under Test
+         ref_uuid: 542a9e4a-35ee-4020-b4b1-35f2decef8b0
+      activities owned:
+      inputs to:
+       - name: Stimulus
+         ref_uuid: 58dcbb7b-fa49-41a6-a5e1-94798e189fba
+         exchanges:
+      outputs from:
+    - name: User Interactions
+      type: FunctionalExchange
+      primary_uuid: e21c8089-f64d-4c02-b099-8638bd0324d0
+      description: ""
+      source function or activity port:
+      - name:  Initiate Thermal Testing
+        ref_uuid: 166a318b-8241-48b4-98b3-e7e4a4d20068
+      target function or activity port:
+      - name: Measure Junction Temperatures
+        ref_uuid: 28c15c32-3dcf-4cc3-90a1-bc165e6376a8
+    - name: Action
+      type: FunctionalExchange
+      primary_uuid: a2b185a2-b931-4f35-bb70-37fc91aa5662
+      description: ""
+      source function or activity port:
+      - name: Launch Power Step Test
+        ref_uuid: e0cab056-8c19-4c4f-8e47-7490f0565f69
+      target function or activity port:
+      - name: Measure Junction Temperatures
+        ref_uuid: 28c15c32-3dcf-4cc3-90a1-bc165e6376a8
+    - name: Measure
+      type: FunctionalExchange
+      primary_uuid: 759337e2-c7c5-4b35-833c-4f61a04a6d86
+      description: ""
+      source function or activity port:
+      - name: Perform EOL Testing
+        ref_uuid: 1a7bae56-1735-4eba-aba2-a42890ee29cc
+      target function or activity port:
+      - name: Measure Junction Temperatures
+        ref_uuid: 28c15c32-3dcf-4cc3-90a1-bc165e6376a8
+    - name: Monitor
+      type: FunctionalExchange
+      primary_uuid: 8ad68ef0-4ad5-4595-9a00-c9cf91ce1dc7
+      description: ""
+      source function or activity port:
+      - name: Monitor Degradation
+        ref_uuid: 2d6e5afd-4cd6-445c-9577-21e54763765b
+      target function or activity port:
+      - name: Measure Junction Temperatures
+        ref_uuid: 28c15c32-3dcf-4cc3-90a1-bc165e6376a8
+    - name: Gather Data
+      type: FunctionalExchange
+      primary_uuid: 06ea5620-634f-41ad-bdde-876773eb9a00
+      description: ""
+      source function or activity port:
+      - name: Measure Junction Temperatures
+        ref_uuid: 28c15c32-3dcf-4cc3-90a1-bc165e6376a8
+      target function or activity port:
+      - name: Collect Thermal Data
+        ref_uuid: c410ca1e-2768-4da5-9eb4-b722a36492e8
+    - name: Data
+      type: FunctionalExchange
+      primary_uuid: 200e1f0c-22fe-4b17-84af-457615452387
+      description: ""
+      source function or activity port:
+      - name: Measure Junction Temperatures
+        ref_uuid: 28c15c32-3dcf-4cc3-90a1-bc165e6376a8
+      target function or activity port:
+      - name: Perform Analysis 
+        ref_uuid: adf870b5-adbd-4523-917d-888891e32364
+    - name: Acrion
+      type: FunctionalExchange
+      primary_uuid: ce6e1b94-42af-40cd-8a49-965e38c23cc6
+      description: ""
+      source function or activity port:
+      - name: Launch Power Step Test
+        ref_uuid: e0cab056-8c19-4c4f-8e47-7490f0565f69
+      target function or activity port:
+      - name: Apply Power Step
+        ref_uuid: 964e4bda-d244-4b10-b6f3-5de0f7247c91
+    - name: Drive
+      type: FunctionalExchange
+      primary_uuid: 48af8ffd-b9c6-436b-8964-82d6ac8c5376
+      description: ""
+      source function or activity port:
+      - name: Perform EOL Testing
+        ref_uuid: 1a7bae56-1735-4eba-aba2-a42890ee29cc
+      target function or activity port:
+      - name: Apply Power Step
+        ref_uuid: 964e4bda-d244-4b10-b6f3-5de0f7247c91
+    - name: Drive Power
+      type: FunctionalExchange
+      primary_uuid: 23feb239-bff6-492a-9d3c-6a35b0249027
+      description: ""
+      source function or activity port:
+      - name: Perform Active Power Cycling
+        ref_uuid: 61439cab-382a-4f33-bbc5-7172b6c9f057
+      target function or activity port:
+      - name: Apply Power Step
+        ref_uuid: 964e4bda-d244-4b10-b6f3-5de0f7247c91
+    - name: Drive System
+      type: FunctionalExchange
+      primary_uuid: 9a384519-1661-4f2c-b08d-e6efab915b6c
+      description: ""
+      source function or activity port:
+      - name: Apply Power Step
+        ref_uuid: 964e4bda-d244-4b10-b6f3-5de0f7247c91
+      target function or activity port:
+      - name: Drive Hardeware Under Test with Power
+        ref_uuid: 4b26380c-461e-4f93-bdeb-90d7d2bd3941
+    - name: User interaction
+      type: FunctionalExchange
+      primary_uuid: 3ce755b6-0ad6-4a2a-9611-1cd2ce903744
+      description: ""
+      source function or activity port:
+      - name: Start Transient Testing
+        ref_uuid: 2db85911-ab09-4e68-9ac7-c41c22839ced
+      target function or activity port:
+      - name: Launch Power Step Test
+        ref_uuid: e0cab056-8c19-4c4f-8e47-7490f0565f69
+    - name: Analysis 
+      type: FunctionalExchange
+      primary_uuid: 60cd2f3c-c823-43c5-b5d0-5653714bcbb1
+      description: ""
+      source function or activity port:
+      - name: Analyze Data
+        ref_uuid: 6ad1c245-31db-4819-86ad-ae293f6cd599
+      target function or activity port:
+      - name: Perform Analysis 
+        ref_uuid: adf870b5-adbd-4523-917d-888891e32364
+    - name: Analyze
+      type: FunctionalExchange
+      primary_uuid: 5babecae-1b50-4b60-a8b8-c8f05f5c99d0
+      description: ""
+      source function or activity port:
+      - name: Perform EOL Testing
+        ref_uuid: 1a7bae56-1735-4eba-aba2-a42890ee29cc
+      target function or activity port:
+      - name: Perform Analysis 
+        ref_uuid: adf870b5-adbd-4523-917d-888891e32364
+    - name: Gather Analysis Data
+      type: FunctionalExchange
+      primary_uuid: da0cda0a-e018-407c-bdc7-df138ad5a180
+      description: ""
+      source function or activity port:
+      - name: Prepare Simulation Data
+        ref_uuid: 84bd5fe6-5535-4014-963b-377796fab70b
+      target function or activity port:
+      - name: Perform Analysis 
+        ref_uuid: adf870b5-adbd-4523-917d-888891e32364
+    - name: User Interaction
+      type: FunctionalExchange
+      primary_uuid: f7936348-1c11-4cdd-8389-c802366ebce7
+      description: ""
+      source function or activity port:
+      - name: Enable Quality Test
+        ref_uuid: 9a349629-620f-4fd4-b3f1-94638d5cf832
+      target function or activity port:
+      - name: Perform EOL Testing
+        ref_uuid: 1a7bae56-1735-4eba-aba2-a42890ee29cc
+    - name: Gather Test Request
+      type: FunctionalExchange
+      primary_uuid: fd362107-a6be-4ae3-b2ef-aa216d93d224
+      description: ""
+      source function or activity port:
+      - name: Perform EOL Testing
+        ref_uuid: 1a7bae56-1735-4eba-aba2-a42890ee29cc
+      target function or activity port:
+      - name: Monitor  Test Request
+        ref_uuid: 94d0b808-9b18-4698-acca-2057c0e9a4f2
+    - name: User Interaction
+      type: FunctionalExchange
+      primary_uuid: b906d1c3-d4fd-4ba9-acc1-73dac58f20a8
+      description: ""
+      source function or activity port:
+      - name: Initiate Power Cycling
+        ref_uuid: f1705ddb-05fe-495e-9c1a-9a79ce27bdc8
+      target function or activity port:
+      - name: Perform Active Power Cycling
+        ref_uuid: 61439cab-382a-4f33-bbc5-7172b6c9f057
+    - name: Monitor
+      type: FunctionalExchange
+      primary_uuid: 29a1adc3-6801-426f-aad0-72efdaf076fa
+      description: ""
+      source function or activity port:
+      - name: Perform Active Power Cycling
+        ref_uuid: 61439cab-382a-4f33-bbc5-7172b6c9f057
+      target function or activity port:
+      - name: Monitor Degradation
+        ref_uuid: 2d6e5afd-4cd6-445c-9577-21e54763765b
+    - name: Intraction
+      type: FunctionalExchange
+      primary_uuid: 0c94f3e4-8990-40ca-b70e-4fc349f01c50
+      description: ""
+      source function or activity port:
+      - name: Create Simulation Data
+        ref_uuid: fdf0bad1-d57b-4245-8b8c-7e98a0cf2dfc
+      target function or activity port:
+      - name: Prepare Simulation Data
+        ref_uuid: 84bd5fe6-5535-4014-963b-377796fab70b
+    - name: Simulaton Data
+      type: FunctionalExchange
+      primary_uuid: 7fa71cac-f914-4b44-a2c1-720a60190603
+      description: ""
+      source function or activity port:
+      - name: Prepare Simulation Data
+        ref_uuid: 84bd5fe6-5535-4014-963b-377796fab70b
+      target function or activity port:
+      - name: Receive Calibration Data
+        ref_uuid: 3be12414-5253-428b-aabf-0f8d93be19a8
+    - name: Themal Data
+      type: FunctionalExchange
+      primary_uuid: 366ebef4-c5a2-4b58-8a47-950f238c9af8
+      description: ""
+      source function or activity port:
+      - name: Provide Source of Measurement
+        ref_uuid: 651cf361-1d4c-4c7b-afc3-0b73cca502a8
+      target function or activity port:
+      - name: Collect Thermal Data
+        ref_uuid: c410ca1e-2768-4da5-9eb4-b722a36492e8
+    - name: Stimulus
+      type: FunctionalExchange
+      primary_uuid: 58dcbb7b-fa49-41a6-a5e1-94798e189fba
+      description: ""
+      source function or activity port:
+      - name: Drive Hardeware Under Test with Power
+        ref_uuid: 4b26380c-461e-4f93-bdeb-90d7d2bd3941
+      target function or activity port:
+      - name: Receive Stimulus
+        ref_uuid: aa9ce436-6985-4f61-997c-e9b6f1520af5
+    - name: Test Request
+      type: FunctionalExchange
+      primary_uuid: fcfd814b-e01a-4e5e-a86f-b7875f473fbb
+      description: ""
+      source function or activity port:
+      - name: Trigger Quality Test
+        ref_uuid: d0d23399-8e23-437a-86d2-31ea2c0b9475
+      target function or activity port:
+      - name: Monitor  Test Request
+        ref_uuid: 94d0b808-9b18-4698-acca-2057c0e9a4f2
+    - name: Next
+      type: FunctionalExchange
+      primary_uuid: 7fd02fcd-74a4-4784-8476-7bbf9fc843bd
+      description: ""
+      source function or activity port:
+      - name:  Initiate Thermal Testing
+        ref_uuid: 166a318b-8241-48b4-98b3-e7e4a4d20068
+      target function or activity port:
+      - name: Analyze Data
+        ref_uuid: 6ad1c245-31db-4819-86ad-ae293f6cd599
+    - name: Next
+      type: FunctionalExchange
+      primary_uuid: 331cd8f2-b9b9-4469-8e67-33746d7a7b93
+      description: ""
+      source function or activity port:
+      - name: Start Transient Testing
+        ref_uuid: 2db85911-ab09-4e68-9ac7-c41c22839ced
+      target function or activity port:
+      - name: Analyze Data
+        ref_uuid: 6ad1c245-31db-4819-86ad-ae293f6cd599
