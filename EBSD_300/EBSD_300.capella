@@ -5438,6 +5438,20 @@
               id="40b9a285-6e8e-408a-9044-81a55ed85d49" targetElement="#7d4fe703-7b82-4b8a-83e8-070e040776d7"
               sourceElement="#c070798c-94cc-4428-9ec6-ee84a7444df5"/>
         </ownedComponentExchanges>
+        <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+            id="80f39102-dbc2-491f-97e2-9fe5ddae815b" name="Heat" source="#428ca8f1-aa6b-4bb3-b345-724b0c7bfc1f"
+            target="#8036d726-b7cb-46fd-80b2-86b525cd4286" kind="FLOW">
+          <ownedComponentExchangeFunctionalExchangeAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentExchangeFunctionalExchangeAllocation"
+              id="90ac4e79-811a-48d7-a995-775606ea4858" targetElement="#b541dc33-8b5e-48ce-b8b4-55bcaedbc9f4"
+              sourceElement="#80f39102-dbc2-491f-97e2-9fe5ddae815b"/>
+        </ownedComponentExchanges>
+        <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+            id="5961c077-a6fa-4f7f-9d71-7830ef909133" name="Air" source="#00c01f03-632f-4072-964a-4ac364bcc620"
+            target="#ed60ebca-d817-4adf-a762-14df6e064238" kind="FLOW">
+          <ownedComponentExchangeFunctionalExchangeAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentExchangeFunctionalExchangeAllocation"
+              id="9d1eb427-5a5c-4e5c-9dc0-7ee3d8e5b51c" targetElement="#ac009e1a-926d-4a2f-beda-cea699b4ae90"
+              sourceElement="#5961c077-a6fa-4f7f-9d71-7830ef909133"/>
+        </ownedComponentExchanges>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
             id="0f14bac5-8f86-4f18-adc7-0adc5b104673" name="EBSD">
           <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
@@ -5839,6 +5853,20 @@
               <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
                   id="33bc29ee-09ed-4e20-9670-03651d74610e" targetElement="#d47d7c50-6068-4eff-8bb2-375ec1e31486"
                   sourceElement="#bf297555-1dc8-47c7-9a40-eade38246b52"/>
+            </ownedFeatures>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="428ca8f1-aa6b-4bb3-b345-724b0c7bfc1f" name="CP 9" orientation="OUT"
+                kind="FLOW">
+              <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
+                  id="c889ad39-10bf-4c49-85dc-7085a6a961b5" targetElement="#6d7e1637-860a-4721-a983-56bd126ab150"
+                  sourceElement="#428ca8f1-aa6b-4bb3-b345-724b0c7bfc1f"/>
+            </ownedFeatures>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="ed60ebca-d817-4adf-a762-14df6e064238" name="CP 10" orientation="IN"
+                kind="FLOW">
+              <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
+                  id="f1b33217-f2f5-40d5-8ce4-a6f7f106996a" targetElement="#88e846a6-46e4-4024-b9c1-f9f9bd183ed1"
+                  sourceElement="#ed60ebca-d817-4adf-a762-14df6e064238"/>
             </ownedFeatures>
           </ownedLogicalComponents>
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
@@ -6297,6 +6325,20 @@
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="3738e99f-7dab-46f4-a8a9-23cee31d85bc" targetElement="#dd99544b-6499-4c22-8f9b-a4adb01c0a62"
               sourceElement="#7a98d693-3b49-4b61-b9de-bbfd7b340b6b"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+              id="8036d726-b7cb-46fd-80b2-86b525cd4286" name="CP 1" orientation="IN"
+              kind="FLOW">
+            <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
+                id="623839b3-121b-4cab-88de-a8826c455158" targetElement="#6933b592-78bf-4982-9ce7-bbb310c37761"
+                sourceElement="#8036d726-b7cb-46fd-80b2-86b525cd4286"/>
+          </ownedFeatures>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+              id="00c01f03-632f-4072-964a-4ac364bcc620" name="CP 2" orientation="OUT"
+              kind="FLOW">
+            <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
+                id="f6d23714-c83d-4c4e-90c9-c486d313faff" targetElement="#8afc2241-2d24-4a69-8f7c-8fdc1ba7188e"
+                sourceElement="#00c01f03-632f-4072-964a-4ac364bcc620"/>
+          </ownedFeatures>
           <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
               id="4e8ca8fe-fd50-4821-aebd-ed6bf2ea4721" targetElement="#5e7eaad5-eb24-4f8d-a467-477e0a26ce3f"
               sourceElement="#7a98d693-3b49-4b61-b9de-bbfd7b340b6b"/>
