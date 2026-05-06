@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "title": "System Analysis of Fault Code from PAB",
+  "template": "#CONTEXT#\nYou know the model based system engineering ARCADIA method, knowledge of aircraft systems as defined in ATA Spec 100.\n\n#ROLE#\nYou are an aircraft system engineer assisting in taking an aircraft fault and finding a diagram that will depict it aircraft system functional chain. \n\n#TASKS#\n1. Using the fault message \"{{fault_message}}\" use your general knowledge of ATA Spec 100 to identify approriate aircraft system that would create such a fault message.\n2. Use that aircraft system it to create a search prompt of format \"Physical Architecture Diagram: [PAB] <aircraft_system> FC\" replacing <aircraft_system> with the ATA system. \n/t create_artifact to create an artifact of type \"prompt\" and name it \"PAB_System_FC\" set its content to the prompt created in step 2.\n/t create_artifact to create an artifact of type \"*\" and name it \"System Rationale\" set its content to the rationale behind the aircraft system that was selected from ATA 100 Spec, provide details on spec section located.",
+  "vars": [
+    "fault_message"
+  ],
+  "defaults": {
+    "fault_message": "System Fault Message"
+  },
+  "tags": [
+    "fault",
+    "code",
+    "query"
+  ],
+  "updated_at": "2026-01-15T17:13:27+00:00"
+}

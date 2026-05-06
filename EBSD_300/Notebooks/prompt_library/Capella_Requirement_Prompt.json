@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "title": "Capella_Requirement",
+  "template": "Please analyze the yaml file and display all Requirements for the diagram:\n1. Format the requirement in a table.\n2. Include its prefix, name, long_name, text, its relations and relation target.",
+  "vars": [],
+  "defaults": {},
+  "tags": [
+    "Requirement",
+    "Capella"
+  ],
+  "updated_at": "2026-02-16T18:17:44+00:00"
+}

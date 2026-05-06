@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "title": "Create Path For View from Manifest",
+  "template": "/t execute_rag_analysis on the document referenced by manifest.yaml search for key: {{key}} and provide the related path. \n/t create folder path from the physical_view path",
+  "vars": [
+    "key"
+  ],
+  "defaults": {
+    "key": "physical_view"
+  },
+  "tags": [
+    "manifest",
+    "query. documentation"
+  ],
+  "updated_at": "2026-01-27T11:31:07+00:00"
+}

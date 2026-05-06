@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "title": "Need_vs_Requirement",
+  "template": "Create a table from {{table}} that would be impacted by a change request of new needs.\nThe table should include the impacted requrement prefix,its long name, its text, a rationale why the requirement is impacted, and which need caused the impact. \n\nThis is the list of needs.\nREQ-000149-Baseline Test Performance\nThe EBSD system baseline test performance time needs to be reduced from 100 seconds to 66 seconds. \n\nREQ-000150-USB-C Support\nThe EBSD system needs to support USB-C to increase performance of data exchange and communication with devices under test. \n\nREQ-000168-Reduce Product Cost\nThe EBSD system product cost needs to be reduced by 10%.",
+  "vars": [
+    "table"
+  ],
+  "defaults": {
+    "table": " "
+  },
+  "tags": [
+    "Need"
+  ],
+  "updated_at": "2026-03-24T18:23:05+00:00"
+}

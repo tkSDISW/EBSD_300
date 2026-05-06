@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "title": "Capella Diagram Functional Chain",
+  "template": "Please analyze the YAML file\n1. The purpose of the diagram based on its related nodes from the perspective of the functional chain: {{functional_chain}} \n2. Describe what the nodes represent in the ARCADIA method and what the diagram is describing.\nPlease format the analysis in .html suitable for Juypter Notbook display operation.\n",
+  "vars": [
+    "functional_chain"
+  ],
+  "defaults": {
+    "functional_chain": " "
+  },
+  "tags": [
+    "Diagram",
+    "Functional Chain"
+  ],
+  "updated_at": "2026-02-15T14:42:44+00:00"
+}

@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "title": "Create_Stakeholder_Profile",
+  "template": "#CONTEXT#\nI am system developer with these responsibilities of gathering stakeholder requirements for a {{system_description}}.\n\n#ROLE#\nYou role is to act as an HR professional with deep expertise in creating personality profiles.\n\n#INTERVIEW#\nInterview me, ask me one question at a time up to a maximum of {{ number}} to understand a stakeholder who will drive the development on the desired system.\n\n#TASK#\nYour task is to generate a stake holder personality profile that can be used to train a GPT to represent this stakeholder for stake holder requirement review. You will create and update an artifact of type personality_profile and name it {{ stakeholder_name}}",
+  "vars": [
+    "system_description",
+    "stakeholder_name",
+    "number"
+  ],
+  "defaults": {
+    "system_description": "people mover",
+    "stakeholder_name": "Fred",
+    "number": 5
+  },
+  "tags": [
+    "CRIT",
+    "Stakeholder",
+    "Profile"
+  ],
+  "updated_at": "2025-11-13T13:31:38+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "title": "Need_to_Requirement_Impact",
+  "template": "Context: You are acting as a System Engineer tasked with assessing how a set of stated Needs may impact an existing set of system Requirements.\n\nUse the loaded requirements file named {{RT}}, which contains the existing Requirements data, and compare it against the provided Needs table {{NT}}.\n\n\nYour goal is to identify requirements that:\n1. may be directly impacted by a Need,\n2. may be indirectly impacted by satisfying a Need,\n3. may constrain delivery of the Need,\n4. may need reconsideration because a performance-driven Need could increase power demand, thermal load, processing load, sensing rate, communication activity, or duty cycle.\n\nInstructions:\n\nAnalyze each Need against the Requirements using a reasoning-only approach. Do not generate code.\n\nFor each Need, compare its meaning against the Requirement fields, especially \"Text\" and \"Long Name\". Do not rely only on exact word matches. Also reason using engineering relationships and likely system behavior.\n\nWhen assessing impact, look for both direct and indirect connections such as:\n- performance increases that may drive higher power consumption,\n- faster response or update rates that may increase processor utilization,\n- improved accuracy or detection capability that may require more sensing, computation, or communication,\n- continuous or more frequent operation that may increase average or peak power,\n- increased power that may affect battery life, thermal limits, power supply sizing, or operating duration,\n- requirements that set limits on energy use, temperature, runtime, or resource usage and therefore may constrain the Need.\n\nBe inclusive in identifying potentially impacted requirements. Prefer capturing plausible engineering impacts rather than only obvious text similarity. If the relationship is indirect but credible, include it and explain the chain of reasoning.\n\nFor each identified result, provide:\n- Req ID: the unique identifier of the Need\n- Need Long Name: a short title summarizing the Need\n- Need Description: the detailed Need text\n- Impacted Requirement ID: the unique ID of the Requirement that may be impacted or may constrain the Need\n- Requirement Long Name: the Long Name from the Requirement row\n- Requirement Text: the Text from the Requirement row\n- Impact Type: one of [Direct Impact, Indirect Impact, Constraint]\n- Rationale: a concise but specific explanation of why the Requirement is related, including performance-to-power reasoning where applicable\n\nImportant guidance:\n- Explicitly look for cases where a performance need could impact power-related requirements even if the Need never uses the word \"power\".\n- Treat timing, speed, throughput, accuracy, refresh rate, resolution, communication frequency, startup time, and continuous monitoring as possible drivers of power impact.\n- Include multiple impacted requirements for a single Need when appropriate.\n- Do not omit a requirement simply because the relationship is indirect.\n- Do not invent requirement IDs or content not present in the loaded files.\n\nOutput format:\nPresent the results only as a single HTML table.\nUse these columns in this order:\nReq ID | Need Long Name | Need Description | Impacted Requirement ID | Requirement Long Name | Requirement Text | Impact Type | Rationale\n\nReturn only valid HTML with no extra commentary.",
+  "vars": [
+    "NT",
+    "RT"
+  ],
+  "defaults": {
+    "NT": "Needs",
+    "RT": "Requirements"
+  },
+  "tags": [
+    "Requirement",
+    "Requirements"
+  ],
+  "updated_at": "2026-03-25T13:50:10+00:00"
+}

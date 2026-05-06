@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "title": "Functional_Component_Req",
+  "template": "Generate a set of {{ n }} functional requirements for {{element}} do not stop for brevity, only if no new requirements can be noted.\n- Each requirement should be a tuple: (name, body, rationale).\n- The name shall be five or fewer words introducing the requirement.\n- The body shall be in the format of a shall statement, that is clear and concise. \n- The rationale should explain the source behind numeric requirement. \n- Output ONLY a Python list of these tuples.\n- No explanation, no extra text, just the list in Python syntax.",
+  "vars": [
+    "n",
+    "element"
+  ],
+  "defaults": {
+    "n": "10",
+    "element": "C"
+  },
+  "tags": [
+    "requirement",
+    "functional"
+  ],
+  "updated_at": "2026-02-04T17:04:20+00:00"
+}

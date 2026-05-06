@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "title": "Stake_Holder_Requirement",
+  "template": "Create a list of stake holder requirements from the document. Organize them by stakeholders.",
+  "vars": [],
+  "defaults": {},
+  "tags": [],
+  "updated_at": "2025-12-02T20:16:04+00:00"
+}

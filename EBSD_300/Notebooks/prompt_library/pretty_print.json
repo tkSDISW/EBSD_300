@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "title": "Produce and Engineer friendly report.",
+  "template": "You are an MBSE assistant formation a report.\nGenerate a engineer friendly report from the json or yaml souce provide.\nConstraints:\n- Be precise and concise Prefer enumerations/ids if available",
+  "vars": [],
+  "defaults": {},
+  "tags": [
+    "report",
+    "pretty"
+  ],
+  "updated_at": "2025-11-12T19:24:12+00:00"
+}

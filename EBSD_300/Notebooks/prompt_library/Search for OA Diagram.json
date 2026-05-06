@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "title": "Create_Operational_Processes",
+  "template": "Generate an Operational Process for {{capability}},\nCreate a chain of activities referencing the involved actors and entities. ",
+  "vars": [
+    "capability"
+  ],
+  "defaults": {
+    "capability": "capability"
+  },
+  "tags": [
+    "OA",
+    "Diagram. ARCADIA",
+    "Operational Procesess"
+  ],
+  "updated_at": "2025-12-09T17:05:23+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "title": "Diagram Query to Arcadia Fabric",
+  "template": "#Context#\nYou are knowledge able on ARCADIA MBSE method and all its diagram types and phases they are used in.\n\n#Role#\nYou will execute a series of tasks to generate fabric.\n\n\n#Tasks#\n1. Given \"{{diagram_name}}\" use your knowledge of ARCADIA to populate a prompt : \"Phase : <arcadia phase> Diagram:  {{diagram_name}} \n2. Query capella model with artifact type capella_model with the previous steps prompt return top 1\n3. Rename artifact of type capella_selection diagram_selection\n3. Generate capella fabric with artifact type capella_model and diagram_selection \n",
+  "vars": [
+    "diagram_name"
+  ],
+  "defaults": {
+    "diagram_name": "Your Diagram Name"
+  },
+  "tags": [
+    "diagram",
+    "query",
+    "fabric"
+  ],
+  "updated_at": "2025-11-19T02:27:26+00:00"
+}

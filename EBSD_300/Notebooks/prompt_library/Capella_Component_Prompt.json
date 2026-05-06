@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "title": "Capella Component",
+  "template": "Please analyze the yaml file and display the result for the specified {{Component}}:\n1. The purpose of the component.\n2. Any components that make it up.\n3. A list of allocated functions and their potential roles.\n4. How the ports relate to the functions.\n5. Any traceabilty artifacts linked to the component and the artifacts url.\n6. Suggestions for improving the component description.\n7. Create a tabular table with columns for the component and its ports and the port interfaces, the interface souce and the interface target.\n8. List any property values and the related model element.\n9. A summary of any related state machines.",
+  "vars": [
+    "Component"
+  ],
+  "defaults": {
+    "Component": " "
+  },
+  "tags": [
+    "Component",
+    "Capella"
+  ],
+  "updated_at": "2026-02-15T14:38:52+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "title": "Need_to_Requirement_Impact_Old",
+  "template": "Context:\nYou are acting as a System Engineer tasked with assessing needs to set of existing requirements. To perform this task, use the loaded requirements file with name {{RT}} , which contains detailed Requirements data, and compare it to the provided table of Needs {{NT}}. Your goal is to identify requirements that will impacted by the needs, or requirements them may constrain the delivery of the need.\n\nInstructions:\nAnalyze Each Need Against Requirement Items\nFor each Need in the provided table, compare its full text to the \"Text\" and \"Long Name\" fields in the loaded Requirement data. Determine whether the requirement may be impacted based on relevance and context, or may constrain delivering on the need.\nUse a reasoning only approach do not generate code.  \nProvide a rationale for the impacted requirement or constraining based on your reasoning and observations.\nStructure the Impact Results\nReflect the results of your assessment only a table. For each requirement, include the following columns:\nReq ID: The unique identifier for the Need.\nNeed Log Name: As a title summarizing the Need.\nRequirement: A detailed description of the Need.\nImpacted Requirement: The requirement unique ID from the Requirement row that is impacted the requirement.\nRequirement Long Name: The associated Text field from the Requirement row that matches the requirement.\nRationale: A detailed explanation of why there is an impact or constraint and how the Requirement item may impacted or constraining the need.\nPresent only the table described no extra commentary is needed. ",
+  "vars": [
+    "NT",
+    "RT"
+  ],
+  "defaults": {
+    "NT": "Needs",
+    "RT": "Requirements"
+  },
+  "tags": [
+    "Requirement",
+    "Requirements"
+  ],
+  "updated_at": "2026-03-25T13:05:18+00:00"
+}
