@@ -81,3 +81,11 @@ Each routine author currently hand-crafts the Step 8 summary output format (tabl
 Recommendation: Define a standard summary block convention in the KP system prompt or a shared prompt_def that routine authors can reference via Jinja2 include or copy-paste. Suggested standard fields: routine_id, diagram/input source, count of objects processed, artifact ID(s) written, push commit SHA, elapsed steps, data quality flags. Allow per-routine extension beyond this baseline.
 
 **References:** [Extract Requirements from Needs Diagram (routine_def)](/packages/EBSD_300/artifacts/2026-06/434be3f3-e826-41cf-af6a-31875f5b6aed/content.json)
+
+---
+
+## 2026-06-18T13:24:12Z — milestone
+
+Routine extract_requirements_from_diagram_v1 completed — extracted 45 requirements from '[LAB] Requirements' (LA). Artifact ID: db738ce2-e5e6-4198-9e58-5adbcce9f5b2
+
+**References:** [[LAB] Requirements — Requirements Table (table)](/packages/EBSD_300/artifacts/2026-06/db738ce2-e5e6-4198-9e58-5adbcce9f5b2/content.csv)
