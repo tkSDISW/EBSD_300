@@ -1,0 +1,133 @@
+routine_def:
+  id: extract_needs_from_diagram_v1
+  name: Extract Requirements from Needs Diagram
+  version: 1
+  description: >
+    Extracts all Requirements from a named Capella needs diagram (any phase),
+    generates a table artifact with prefix, long name, text, relations, and
+    relation targets, then logs a milestone and reports a summary to the engineer.
+
+  variables:
+    - name: diagram_name
+      description: >
+        Full name of the Capella diagram to extract requirements from.
+        Example: "[SAB] Context with Needs"
+      required: true
+
+    - name: phase
+      description: >
+        Capella model phase containing the diagram. One of OA, SA, LA, PA.
+      required: true
+      default: SA
+
+    - name: output_package
+      description: >
+        Artifact repo package to write the output table into.
+      required: true
+      default: EBSD_300
+
+    - name: artifact_name_prefix
+      description: >
+        Optional human-readable prefix for the output artifact name.
+        Result will be "<prefix> — <diagram_name> Requirements Table"
+      required: false
+      default: ""
+
+  pre_flight_checks:
+    - check: diagram_name is defined and not empty
+      error: "Variable 'diagram_name' must be provided. Example: \"[SAB] Context with Needs\""
+    - check: phase is one of [OA, SA, LA, PA]
+      error: "Variable 'phase' must be one of OA, SA, LA, PA."
+
+  resources:
+    - type: capella_model_repo
+      description: >
+        Capella model repo containing the target diagram.
+        Cloned on branch 'master' before executing this routine.
+
+  inputs: []
+
+  prompt_template: |
+    You are a Systems Engineering Knowledge Partner executing a structured routine.
+
+    ## Task
+    Extract all Requirement objects from the Capella diagram named
+    "{{ diagram_name }}" in the {{ phase }} phase of the EBSD_300 model.
+
+    ## Execution Steps
+
+    ### Step 1 — Resolve diagram UUID
+    Browse the model for Diagrams in the {{ phase }} phase.
+    Find the entry whose name exactly matches "{{ diagram_name }}".
+    If not found, abort with:
+      ERROR: "Diagram '{{ diagram_name }}' not found in phase {{ phase }}."
+
+    ### Step 2 — Generate fabric
+    Resolve the diagram UUID and call generate_fabric to get the full
+    YAML fabric for that diagram.
+
+    ### Step 3 — Parse Requirements
+    From the fabric, extract every object with type: Requirement.
+    For each, collect:
+      - prefix          — the "prefix:" field (e.g. REQ-000149/A)
+      - long_name       — the "long name:" field
+      - text            — the "text:" field, HTML-stripped and entity-decoded
+      - relations       — all linked CapellaOutgoingRelation entries formatted
+                          as "Satisfy → <target name>"; semicolon-separated
+      - relation_targets — target element names only; semicolon-separated
+    Skip any requirement whose prefix is empty.
+
+    ### Step 4 — Build CSV
+    Construct a CSV string with header:
+      Prefix,Long Name,Text,Relations,Relation Targets
+    One row per requirement found.
+
+    ### Step 5 — Write table artifact
+    Write a "table" artifact to the artifact repo:
+      package: {{ output_package }}
+      name: "{% if artifact_name_prefix %}{{ artifact_name_prefix }} — {% endif %}{{ diagram_name }} Requirements Table"
+      type: table
+      tags: ["requirements", "{{ phase }}", "needs", "{{ output_package }}"]
+      source_tool: capella-fabric:generate_fabric
+    Record the returned artifact_id.
+
+    ### Step 6 — Push
+    Push the artifact to main.
+
+    ### Step 7 — Log milestone
+    Add a log entry (type: milestone) to the work log in package {{ output_package }}:
+      "Routine extract_needs_from_diagram_v1 completed — extracted <N> requirements
+       from '{{ diagram_name }}' ({{ phase }}). Artifact ID: <artifact_id>"
+
+    ### Step 8 — Report summary to engineer
+    Display the following:
+
+    **Routine Complete: Extract Requirements from Needs Diagram**
+
+    | Field | Value |
+    |---|---|
+    | Diagram | {{ diagram_name }} |
+    | Phase | {{ phase }} |
+    | Requirements found | <N> |
+    | Artifact ID | <artifact_id> |
+    | Artifact name | <artifact_name> |
+    | Package | {{ output_package }} |
+
+    Then show a markdown table:
+    | Prefix | Long Name | Relation Targets |
+    |---|---|---|
+    (one row per requirement)
+
+    Finally, call out any data quality observations:
+    - Requirements with no relation targets
+    - Text that appears incomplete or is a placeholder
+    - Duplicate prefixes
+    - Typos in long names or relation target names
+
+  outputs:
+    - name: requirements_table
+      type: table
+      description: >
+        CSV table of all requirements extracted from the target diagram with
+        columns: Prefix, Long Name, Text, Relations, Relation Targets.
+      required: true

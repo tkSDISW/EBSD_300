@@ -1,0 +1,18 @@
+{
+  "artifact_id": "434be3f3-e826-41cf-af6a-31875f5b6aed",
+  "name": "Extract Requirements from Needs Diagram",
+  "type": "routine_def",
+  "package_name": "EBSD_300",
+  "created_at": "2026-06-18T12:38:51.037593Z",
+  "updated_at": "2026-06-18T12:38:51.037817Z",
+  "tags": [
+    "routine",
+    "requirements",
+    "extraction",
+    "needs",
+    "capella",
+    "EBSD_300"
+  ],
+  "source_tool": "SE Knowledge Partner",
+  "lineage": []
+}
