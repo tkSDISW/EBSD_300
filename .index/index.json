@@ -14,5 +14,21 @@
       "EBSD_300",
       "satisfy"
     ]
+  },
+  "dbc57d0d-97db-4eba-9d0b-cdb806936cd5": {
+    "type": "table",
+    "name": "SAB Context with Needs \u2014 SA-Level Needs Table",
+    "package_name": "EBSD_300",
+    "path": "packages/EBSD_300/artifacts/2026-06/dbc57d0d-97db-4eba-9d0b-cdb806936cd5",
+    "created_at": "2026-06-18T12:31:38.362964+00:00",
+    "updated_at": "2026-06-18T12:31:38.362998+00:00",
+    "tags": [
+      "requirements",
+      "needs",
+      "SA",
+      "SAB",
+      "traceability",
+      "EBSD_300"
+    ]
   }
 }

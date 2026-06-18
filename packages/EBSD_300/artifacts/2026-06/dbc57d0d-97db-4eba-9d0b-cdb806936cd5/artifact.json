@@ -1,0 +1,20 @@
+{
+  "artifact_id": "dbc57d0d-97db-4eba-9d0b-cdb806936cd5",
+  "name": "SAB Context with Needs — SA-Level Needs Table",
+  "type": "table",
+  "package_name": "EBSD_300",
+  "created_at": "2026-06-18T12:31:38.362964Z",
+  "updated_at": "2026-06-18T12:31:38.362998Z",
+  "tags": [
+    "requirements",
+    "needs",
+    "SA",
+    "SAB",
+    "traceability",
+    "EBSD_300"
+  ],
+  "source_tool": "capella-fabric:generate_fabric",
+  "lineage": [
+    "86b4ebde-435e-4f1e-b926-d36dab7728aa"
+  ]
+}

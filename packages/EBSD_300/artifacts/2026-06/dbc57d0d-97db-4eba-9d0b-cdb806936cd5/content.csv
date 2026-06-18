@@ -1,0 +1,4 @@
+Prefix,Long Name,Text,Relation Type,Relation Target,Source Diagram,Notes
+REQ-000149/A,Baseline Test Performance,The EBSD system baseline test performance time needs to be reduced from 100 seconds to 66 seconds.,Satisfy,EBSD,[SAB] Context with Needs,Drove LA REQ-000156/A (90 sec target; allocated to EBSD + Control Subsystem + PCB SC100)
+REQ-000150/A,USB-C Support,The EBSD system needs to support USB-C to increase performance of data exchange and communication with devices under test.,Satisfy,EBSD,[SAB] Context with Needs,Drove LA REQ-000152/A (USB-A) and REQ-000159/A (USB Connector V2.0); influenced REQ-000169/A (Fiber Optic RX/TX)
+REQ-000168/A,Reduce Product Cost,The EBSD system product cost needs to be reduced by 10%.,Satisfy,EBSD,[SAB] Context with Needs,Drove LA REQ-000165/A (Component Costs ≤ $1500) and REQ-000166/A (Per Unit Assembly Costs ≤ $500)
