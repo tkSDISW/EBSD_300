@@ -1,0 +1,18 @@
+{
+  "86b4ebde-435e-4f1e-b926-d36dab7728aa": {
+    "type": "table",
+    "name": "LAB Extreme Impacted Requirements \u2014 Requirement Table",
+    "package_name": "EBSD_300",
+    "path": "packages/EBSD_300/artifacts/2026-06/86b4ebde-435e-4f1e-b926-d36dab7728aa",
+    "created_at": "2026-06-18T12:19:58.355497+00:00",
+    "updated_at": "2026-06-18T12:19:58.355538+00:00",
+    "tags": [
+      "requirements",
+      "LA",
+      "LAB",
+      "diagram",
+      "EBSD_300",
+      "satisfy"
+    ]
+  }
+}

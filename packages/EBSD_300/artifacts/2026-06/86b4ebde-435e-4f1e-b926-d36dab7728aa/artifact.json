@@ -1,0 +1,18 @@
+{
+  "artifact_id": "86b4ebde-435e-4f1e-b926-d36dab7728aa",
+  "name": "LAB Extreme Impacted Requirements — Requirement Table",
+  "type": "table",
+  "package_name": "EBSD_300",
+  "created_at": "2026-06-18T12:19:58.355497Z",
+  "updated_at": "2026-06-18T12:19:58.355538Z",
+  "tags": [
+    "requirements",
+    "LA",
+    "LAB",
+    "diagram",
+    "EBSD_300",
+    "satisfy"
+  ],
+  "source_tool": "capella-fabric:generate_fabric",
+  "lineage": []
+}
