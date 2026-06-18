@@ -69,3 +69,15 @@ The 10-step KP Routine Execution Protocol in the v4 system prompt states that st
 Recommendation: Make the system prompt more explicit that step 5 is a conditional branch: if no capella_model_repo resource is declared, skip all model cloning entirely. Consider adding a resource type enum to the schema documentation so authors choose explicitly from [capella_model_repo, artifact_repo, external_api] etc. rather than free-texting the type.
 
 **References:** [Extract Requirements from Needs Diagram (routine_def)](/packages/EBSD_300/artifacts/2026-06/434be3f3-e826-41cf-af6a-31875f5b6aed/content.json)
+
+---
+
+## 2026-06-18T12:42:34Z — issue
+
+ISSUE-RD-006 | No standard pattern for the post-execution summary step in the prompt_template.
+
+Each routine author currently hand-crafts the Step 8 summary output format (tables, field lists, data quality callouts). This will produce inconsistent engineer experience across routines. There is no shared summary template, no standard set of "always include" fields, and no guidance on how verbose or terse the output should be.
+
+Recommendation: Define a standard summary block convention in the KP system prompt or a shared prompt_def that routine authors can reference via Jinja2 include or copy-paste. Suggested standard fields: routine_id, diagram/input source, count of objects processed, artifact ID(s) written, push commit SHA, elapsed steps, data quality flags. Allow per-routine extension beyond this baseline.
+
+**References:** [Extract Requirements from Needs Diagram (routine_def)](/packages/EBSD_300/artifacts/2026-06/434be3f3-e826-41cf-af6a-31875f5b6aed/content.json)
