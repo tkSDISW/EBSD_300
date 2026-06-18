@@ -21,3 +21,15 @@ When authoring extract_needs_from_diagram_v1, the schema had to be discovered it
 Recommendation: Add a routine_def SKILL.md (or inline schema reference in the KP system prompt under the artifact-repo section) that documents the full required structure: routine_def top-level key, variable fields (name, type, description, required, default), resource fields (id, type, mcp_tool, description), pre_flight entry format, prompt_template Jinja2 conventions, and output fields (name, type, package, description, required). Include a minimal working example.
 
 **References:** [Extract Requirements from Needs Diagram (routine_def)](/packages/EBSD_300/artifacts/2026-06/434be3f3-e826-41cf-af6a-31875f5b6aed/content.json)
+
+---
+
+## 2026-06-18T12:42:01Z — issue
+
+ISSUE-RD-002 | validate_routine_def returns all errors in a single pass but does not indicate which fields are valid. 
+
+During authoring, validation only reports what is broken, not what is correct. After the first fix pass, it was unclear whether previously-passing fields had regressed. A "passed checks" list alongside "errors" would allow faster iterative authoring and reduce the risk of inadvertently breaking a previously valid section while fixing another.
+
+Recommendation: Extend the validate_routine_def response to include a "passed" array listing fields that were verified clean, in addition to "errors" and "warnings". Alternatively, provide a --verbose mode.
+
+**References:** [Extract Requirements from Needs Diagram (routine_def)](/packages/EBSD_300/artifacts/2026-06/434be3f3-e826-41cf-af6a-31875f5b6aed/content.json)
