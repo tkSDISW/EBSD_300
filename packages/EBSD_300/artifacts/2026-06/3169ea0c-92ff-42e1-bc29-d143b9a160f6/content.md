@@ -57,3 +57,15 @@ The Jinja2 prompt_template is the most complex part of a routine_def and the har
 Recommendation: Add a render_routine_prompt tool (analogous to render_prompt for prompt_def artifacts) that accepts a routine_def artifact_id and a variables dict, renders the prompt_template with those values, and returns the rendered string. This allows the author to proof the template before the routine is ever executed in a live session.
 
 **References:** [Extract Requirements from Needs Diagram (routine_def)](/packages/EBSD_300/artifacts/2026-06/434be3f3-e826-41cf-af6a-31875f5b6aed/content.json)
+
+---
+
+## 2026-06-18T12:42:26Z — issue
+
+ISSUE-RD-005 | Routine Execution Protocol (step 4) assumes all routines have a capella_model_repo resource, causing unnecessary clone steps for artifact-only routines.
+
+The 10-step KP Routine Execution Protocol in the v4 system prompt states that step 5 should clone the capella_model_repo for every declared resource. However, many routines (such as pure artifact extraction or report generation routines) may have no Capella resource at all. The system prompt does note "only if the routine declares it" but the surrounding language implies capella_model_repo is the expected default, which may lead KP to attempt a clone unnecessarily.
+
+Recommendation: Make the system prompt more explicit that step 5 is a conditional branch: if no capella_model_repo resource is declared, skip all model cloning entirely. Consider adding a resource type enum to the schema documentation so authors choose explicitly from [capella_model_repo, artifact_repo, external_api] etc. rather than free-texting the type.
+
+**References:** [Extract Requirements from Needs Diagram (routine_def)](/packages/EBSD_300/artifacts/2026-06/434be3f3-e826-41cf-af6a-31875f5b6aed/content.json)
