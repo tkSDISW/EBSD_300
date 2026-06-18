@@ -1,0 +1,46 @@
+Prefix,Long Name,Text,Relations,Relation Targets
+REQ-000062/A,Provide Storage Capabilities,"The EBSD system shall provide mass storage for programs and data. It should be able to transfer data to and from mass storage devices, subject only to size limitations.",Satisfy → EBSD,EBSD
+REQ-000057/A,Provide Execution Capabilities,EBSD PC shall be Specific user's EBSD PC hardware/software system configuration execution capability requirements the responsibility of the user.,Satisfy → EBSD,EBSD
+REQ-000052/A,Operating Pressure Environment,The EBSD shall meet performance requirements specified herein during exposure to an ambient pressure environment ranging from 9.5 to 16.0 pounds per square inch absolute (psia).,Satisfy → EBSD,EBSD
+REQ-000059/A,Pressure Environment,The EBSD System hardware components shall meet performance requirements specified herein following exposure to the nominal pressure environments.,Satisfy → EBSD,EBSD
+REQ-000053/A,Vibration,The EBSD hardware components shall comply with 1g,Satisfy → EBSD,EBSD
+REQ-000068/A,Enriched Oxygen Environment,The EBSD hardware components shall meet specified performance when the atmosphere is at 10.2 +/- 0.2 psia with an oxygen concentration of up to 30 percent.,Satisfy → EBSD,EBSD
+REQ-000071/A,Humidity,The EBSD hardware components shall meet the performance requirements specified herein when exposed to 30..90% (noncondensing) percent relative humidity,Satisfy → EBSD,EBSD
+REQ-000056/A,Shock,The EBSD hardware components shall meet 15g shock requirement,Satisfy → EBSD,EBSD
+REQ-000050/A,Operating Thermal Environment,EBSD System shall operate between 0 and 50 °C,Satisfy → EBSD,EBSD
+REQ-000063/A,Ionizing Radiation,"The EBSD hardware components shall meet specified performance when exposed to the nominal Single Event Effects (SEE) environment defined in the End Item Specification - MJ070-0001-1E, Performance & Design Rqmts, Sections: 3.5.20Avionics Radiation Requirements and 10.1.7 Radiation.",Satisfy → EBSD,EBSD
+REQ-000067/A,Rear Panel Connections,Rear Panel Connections shall beat the back of the box.,Satisfy → Chassis Subsystem,Chassis Subsystem
+REQ-000058/A,28 pin I/O interface,The EBSD System shall have 1 28 pin I/O interface,Satisfy → Chassis Subsystem,Chassis Subsystem
+REQ-000070/A,Design,The design of the EBSD PC shall fulfill / communicate: Robustness; High quality; Brand recognition; Ready for customizing; Color scheme to Siemens corporate colors.,Satisfy → EBSD,EBSD
+REQ-000072/A,Failure Propagation,Simcenter EBSD PC COTS hardware shall be analyzed to determine its intrinsic failure propagation capabilities. Failure propagations for specific hardware/software system configuration of data systems will be addressed in the features specification.,Satisfy → EBSD,EBSD
+REQ-000055/A,Failure Tolerance,Simcenter EBSD PC software system configuration requirements for failure tolerance levels shall be address in the features specification.,Satisfy → EBSD,EBSD
+REQ-000069/A,Screening for Early Failure,"Simcenter EBSD PC hardware shall be submitted to burn-in testing to detect material and workmanship defects, which can result in early component failure.",Satisfy → EBSD,EBSD
+REQ-000066/A,Power,Maximum power consumption shall be 430 W,Satisfy → Power Subsytem; Satisfy → AC/DC Power Supply,Power Subsytem; AC/DC Power Supply
+REQ-000143/A,Efficiency,The Power Subsystem shall transform power efficiently of higher than 80%..,Satisfy → Power Subsytem,Power Subsytem
+REQ-000141/A,Temo Variation,The Power Subsystem shall handle environmental impacts such as temperature variations.,Satisfy → Power Subsytem,Power Subsytem
+REQ-000147/A,Power Conversion,The Power Subsystem shall convert power supply to compatible voltages for all subsystems.,Satisfy → Power Subsytem,Power Subsytem
+REQ-000146/A,Stability,The Power Subsystem shall manage load distribution for system stability.,Satisfy → Power Subsytem,Power Subsytem
+REQ-000142/A,Distribute Power,The Power Subsystem shall distribute power to all necessary components.,Satisfy → Power Subsytem,Power Subsytem
+REQ-000144/A,Power Storage,The Power Subsystem shall support energy storage to handle less than 10 second power drops,Satisfy → Power Subsytem,Power Subsytem
+REQ-000145/A,Isolation,The Power Subsystem shall provide isolation in case of power faults.,Satisfy → Power Subsytem,Power Subsytem
+REQ-000061/A,Usability,All interfaces and control elements shall be on one side; easy accessibility / usability to interfaces and control elements in standard mounting.,Satisfy → Chassis Subsystem,Chassis Subsystem
+REQ-000060/A,Diagnosis,The EBSD system shall have an embedded monitoring capability of the main board temperature,Satisfy → Control Subsystem; Satisfy → EBSD,Control Subsystem; EBSD
+REQ-000076/A,Fanless CPU Cooling,The EBSD System shall have heat-sink with no fans on CPU,Satisfy → EBSD; Satisfy → Fan,EBSD; Fan
+REQ-000065/A,Provide Startup Capabilities,"EBSD System EBSD PC shall initialize and perform internal tests as provided by the COTS components, and will provide feedback.",Satisfy → EBSD,EBSD
+REQ-000064/A,Provide File Transfer Capabilities,EBSD System shall be specific user's EBSD PC hardware/software system configuration requirements to transfer files are the responsibility of the user. The Simcenter EBSD PC support the transfer of files using the following: USB connector (V2.0); LAN; Wireless,Satisfy → EBSD,EBSD
+REQ-000049/A,Provide Caution and Warning Capabilities,EBSD System shall capture specific user's EBSD PC hardware/software system configuration requirements for caution and warning functionality are the responsibility of the user.,Satisfy → EBSD,EBSD
+REQ-000051/A,Receive and Process External Data,EBSD System shall capture specific user's EBSD PC hardware/software system configuration requirements for receiving and processing data are the responsibility of the users.,Satisfy → EBSD,EBSD
+REQ-000054/A,Provide Communication Capabilities,EBSD System shall capture specific user's hardware/software system configuration requirements to transfer files are out of scope of this PTRS. The EBSD PC support the transfer of data for communication with the following interfaces: USB connector (V2.0),Satisfy → EBSD,EBSD
+REQ-000156/A,Baseline Test Performance,The EBSD System shall perform baseline performance test in 90 seconds.,Satisfy → EBSD; Satisfy → Control Subsystem; Satisfy → PCB SC100,EBSD; Control Subsystem; PCB SC100
+REQ-000155/A,CAN,The EBSD System shall have 5 CAN connections,Satisfy → Chassis Subsystem; Satisfy → EBSD,Chassis Subsystem; EBSD
+REQ-000163/A,EBSD junction operating temperatures,The operating temperature on boards shall not exceed 70° C.,Satisfy → EBSD; Satisfy → Control Subsystem,EBSD; Control Subsystem
+REQ-000160/A,Service,The EBSD system shall be capable of service with standard shop tools.,Satisfy → EBSD,EBSD
+REQ-000162/A,EBSD board temperatures,The EBSD board temperatures shall be monitored.,Satisfy → EBSD; Satisfy → Control Subsystem,EBSD; Control Subsystem
+REQ-000165/A,Component Costs,The EBSD component cost shall not exceed 1500 USD.,Satisfy → EBSD,EBSD
+REQ-000166/A,Per Unit Assembly Costs,The EBSD component cost shall not exceed 500 USD.,Satisfy → EBSD,EBSD
+REQ-000151/A,Gigabit Ethernet port,The EBSD System shall have 1 Gigabit Ethernet port.,Satisfy → EBSD,EBSD
+REQ-000153/A,RS232,The EBSD System shall 3 RS232 ports.,Satisfy → EBSD,EBSD
+REQ-000154/A,RS422/485,The EBSD System shall have 1 RS422/485 ports.,Satisfy → EBSD,EBSD
+REQ-000152/A,USB - A,The EBSD System shall have two USB A ports.,Satisfy → EBSD; Satisfy → PCB SC100,EBSD; PCB SC100
+REQ-000159/A,USB Connector (V2.0),EBSD System shall have USB 2.0 Connector on the Front Panel for mass storage of data.,Satisfy → Structure; Satisfy → EBSD,Structure; EBSD
+REQ-000169/A,Fiber Optic RX/TX,The EBSD System hall have 1 Fiber Optic RX/TX port,Satisfy → EBSD,EBSD
