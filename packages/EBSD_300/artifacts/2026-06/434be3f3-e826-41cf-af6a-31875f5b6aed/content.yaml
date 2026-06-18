@@ -9,38 +9,44 @@ routine_def:
 
   variables:
     - name: diagram_name
+      type: string
       description: >
         Full name of the Capella diagram to extract requirements from.
         Example: "[SAB] Context with Needs"
       required: true
 
     - name: phase
+      type: string
       description: >
         Capella model phase containing the diagram. One of OA, SA, LA, PA.
-      required: true
+      required: false
       default: SA
 
     - name: output_package
+      type: string
       description: >
         Artifact repo package to write the output table into.
-      required: true
+      required: false
       default: EBSD_300
 
     - name: artifact_name_prefix
+      type: string
       description: >
         Optional human-readable prefix for the output artifact name.
         Result will be "<prefix> — <diagram_name> Requirements Table"
       required: false
       default: ""
 
-  pre_flight_checks:
-    - check: diagram_name is defined and not empty
-      error: "Variable 'diagram_name' must be provided. Example: \"[SAB] Context with Needs\""
-    - check: phase is one of [OA, SA, LA, PA]
+  pre_flight:
+    - check: "diagram_name != ''"
+      error: "Variable 'diagram_name' must be provided and non-empty. Example: \"[SAB] Context with Needs\""
+    - check: "phase in ['OA', 'SA', 'LA', 'PA']"
       error: "Variable 'phase' must be one of OA, SA, LA, PA."
 
   resources:
-    - type: capella_model_repo
+    - id: capella_model
+      type: capella_model_repo
+      mcp_tool: capella-fabric
       description: >
         Capella model repo containing the target diagram.
         Cloned on branch 'master' before executing this routine.
@@ -89,7 +95,7 @@ routine_def:
       type: table
       tags: ["requirements", "{{ phase }}", "needs", "{{ output_package }}"]
       source_tool: capella-fabric:generate_fabric
-    Record the returned artifact_id.
+    Record the returned artifact_id and artifact name.
 
     ### Step 6 — Push
     Push the artifact to main.
@@ -113,20 +119,21 @@ routine_def:
     | Artifact name | <artifact_name> |
     | Package | {{ output_package }} |
 
-    Then show a markdown table:
+    Then show a quick-reference markdown table:
     | Prefix | Long Name | Relation Targets |
     |---|---|---|
     (one row per requirement)
 
     Finally, call out any data quality observations:
     - Requirements with no relation targets
-    - Text that appears incomplete or is a placeholder
+    - Text that appears incomplete or is placeholder content
     - Duplicate prefixes
-    - Typos in long names or relation target names
+    - Typos observed in long names or relation target names
 
   outputs:
     - name: requirements_table
       type: table
+      package: "{{ output_package }}"
       description: >
         CSV table of all requirements extracted from the target diagram with
         columns: Prefix, Long Name, Text, Relations, Relation Targets.
