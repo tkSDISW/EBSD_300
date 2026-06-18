@@ -1,18 +1,19 @@
 routine_def:
-  id: extract_needs_from_diagram_v1
-  name: Extract Requirements from Needs Diagram
-  version: 1
+  id: extract_requirements_from_diagram_v1
+  name: Extract Requirements from Capella Diagram
+  version: 2
   description: >
-    Extracts all Requirements from a named Capella needs diagram (any phase),
+    Extracts all Requirements from any named Capella diagram (any phase),
     generates a table artifact with prefix, long name, text, relations, and
     relation targets, then logs a milestone and reports a summary to the engineer.
+    Works with any diagram type — needs diagrams, LAB, SAB, requirements diagrams, etc.
 
   variables:
     - name: diagram_name
       type: string
       description: >
         Full name of the Capella diagram to extract requirements from.
-        Example: "[SAB] Context with Needs"
+        Example: "[SAB] Context with Needs" or "[LAB] Extreme Impacted Requirements"
       required: true
 
     - name: phase
@@ -93,7 +94,7 @@ routine_def:
       package: {{ output_package }}
       name: "{% if artifact_name_prefix %}{{ artifact_name_prefix }} — {% endif %}{{ diagram_name }} Requirements Table"
       type: table
-      tags: ["requirements", "{{ phase }}", "needs", "{{ output_package }}"]
+      tags: ["requirements", "{{ phase }}", "{{ output_package }}"]
       source_tool: capella-fabric:generate_fabric
     Record the returned artifact_id and artifact name.
 
@@ -102,13 +103,12 @@ routine_def:
 
     ### Step 7 — Log milestone
     Add a log entry (type: milestone) to the work log in package {{ output_package }}:
-      "Routine extract_needs_from_diagram_v1 completed — extracted <N> requirements
+      "Routine extract_requirements_from_diagram_v1 completed — extracted <N> requirements
        from '{{ diagram_name }}' ({{ phase }}). Artifact ID: <artifact_id>"
 
     ### Step 8 — Report summary to engineer
-    Display the following:
 
-    **Routine Complete: Extract Requirements from Needs Diagram**
+    **Routine Complete: Extract Requirements from Capella Diagram**
 
     | Field | Value |
     |---|---|
