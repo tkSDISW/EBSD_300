@@ -72,5 +72,22 @@
       "EBSD_300",
       "baseline"
     ]
+  },
+  "3c6301aa-867f-44f8-a46b-556be1652d69": {
+    "type": "text",
+    "name": "Needs vs Requirements Impact Analysis \u2014 EBSD_300",
+    "package_name": "EBSD_300",
+    "path": "packages/EBSD_300/artifacts/2026-06/3c6301aa-867f-44f8-a46b-556be1652d69",
+    "created_at": "2026-06-18T13:52:43.258765+00:00",
+    "updated_at": "2026-06-18T13:52:43.258793+00:00",
+    "tags": [
+      "requirements",
+      "impact-analysis",
+      "needs",
+      "traceability",
+      "EBSD_300",
+      "LA",
+      "SA"
+    ]
   }
 }
