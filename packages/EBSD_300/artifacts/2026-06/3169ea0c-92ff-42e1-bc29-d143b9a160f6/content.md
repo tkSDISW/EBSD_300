@@ -45,3 +45,15 @@ The KP system prompt (v4) documents the pre-flight block as "pre_flight_checks",
 Recommendation: (a) Align system prompt documentation to use "pre_flight" consistently, OR (b) have the validator emit a warning when it detects an unrecognised top-level key inside routine_def (such as "pre_flight_checks") that looks like a near-miss for a known field.
 
 **References:** [Extract Requirements from Needs Diagram (routine_def)](/packages/EBSD_300/artifacts/2026-06/434be3f3-e826-41cf-af6a-31875f5b6aed/content.json)
+
+---
+
+## 2026-06-18T12:42:17Z — issue
+
+ISSUE-RD-004 | No dry-run or render-only mode for routine_def prompt_template.
+
+The Jinja2 prompt_template is the most complex part of a routine_def and the hardest to validate — validate_routine_def checks structure but does not render the template with test variable values to confirm the Jinja2 is syntactically correct and produces sensible output. Errors in template syntax (unclosed blocks, wrong variable names) will only surface at execution time.
+
+Recommendation: Add a render_routine_prompt tool (analogous to render_prompt for prompt_def artifacts) that accepts a routine_def artifact_id and a variables dict, renders the prompt_template with those values, and returns the rendered string. This allows the author to proof the template before the routine is ever executed in a live session.
+
+**References:** [Extract Requirements from Needs Diagram (routine_def)](/packages/EBSD_300/artifacts/2026-06/434be3f3-e826-41cf-af6a-31875f5b6aed/content.json)
