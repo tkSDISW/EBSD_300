@@ -97,3 +97,21 @@ Routine extract_requirements_from_diagram_v1 completed — extracted 45 requirem
 First successful execution of generalised routine extract_requirements_from_diagram_v1 against [LAB] Requirements diagram. Routine ran cleanly on first attempt with no debugging required — 45 requirements extracted, artifact written, pushed to main, and immediately visible in the artifact web viewer. Engineer confirmed artifacts readable as a dashboard in the viewer.
 
 **References:** [Extract Requirements from Capella Diagram (routine_def)](/packages/EBSD_300/artifacts/2026-06/434be3f3-e826-41cf-af6a-31875f5b6aed/content.json), [[LAB] Requirements — Requirements Table (table)](/packages/EBSD_300/artifacts/2026-06/db738ce2-e5e6-4198-9e58-5adbcce9f5b2/content.csv)
+
+---
+
+## 2026-06-18T13:26:44Z — observation
+
+OBS-EBSD-001 · Routine generalisation confirmed — extract_requirements_from_diagram_v1 executes correctly across diagram types without modification.
+
+The routine was originally authored against [SAB] Context with Needs (3 requirements) and generalised from extract_needs_from_diagram_v1 to extract_requirements_from_diagram_v1 by updating the id, name, description, and tags only — no structural or template changes. It was then immediately executed against [LAB] Requirements (a different diagram type, different phase, 45 requirements) and produced a correct, complete artifact on the first run with no debugging.
+
+This confirms the routine_def variable parameterisation approach works as designed. The diagram_name and phase variables are sufficient to redirect the full execution — browse, resolve, fabric generation, parsing, CSV build, artifact write, push, and summary — to any target diagram without author intervention.
+
+The engineer also confirmed that the produced artifact is immediately readable in the artifact web viewer as a dashboard, validating the end-to-end pipeline from model → routine → artifact → viewer in a single session. This is the first complete demonstration of that pipeline on the EBSD_300 project.
+
+Connection to OBS-014 (artifact store reduces chat to a trigger): the [LAB] Requirements extraction required a single invocation message. No setup, no context reconstruction, no interactive debugging. The routine held the method; the variable held the target. One message, one clean artifact.
+
+Connection to OBS-011 (CNC analogy): the engineer loaded the stock ([LAB] Requirements), pressed start, and the machine delivered the finished part. Routine library is proving out.
+
+**References:** [Extract Requirements from Capella Diagram (routine_def)](/packages/EBSD_300/artifacts/2026-06/434be3f3-e826-41cf-af6a-31875f5b6aed/content.json)
