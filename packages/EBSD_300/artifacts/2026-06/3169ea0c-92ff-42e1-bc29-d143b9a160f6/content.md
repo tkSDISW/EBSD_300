@@ -176,3 +176,11 @@ The routine_def format already supports this evolution — the prompt_template, 
 This is the same cost trajectory as CNC machining: initial programming on expensive CAD/CAM software, execution on cheap commodity hardware. The intelligence is in the program, not the machine.
 
 **References:** [Extract Requirements from Capella Diagram (routine_def)](/packages/EBSD_300/artifacts/2026-06/434be3f3-e826-41cf-af6a-31875f5b6aed/content.json)
+
+---
+
+## 2026-06-18T13:52:51Z — milestone
+
+Needs vs Requirements Impact Analysis completed and saved as artifact 3c6301aa. 29 findings across 3 SA-level needs against 45 LA baseline requirements: 10 direct impacts, 12 indirect impacts, 7 constraints. Analysis synthesised directly from two prior artifact repo artifacts (SA needs table dbc57d0d and LA requirements table db738ce2) — no model re-query required. Artifact lineage set to both source tables.
+
+**References:** [Needs vs Requirements Impact Analysis — EBSD_300 (text)](/packages/EBSD_300/artifacts/2026-06/3c6301aa-867f-44f8-a46b-556be1652d69/content.md), [SAB Context with Needs — SA-Level Needs Table (table)](/packages/EBSD_300/artifacts/2026-06/dbc57d0d-97db-4eba-9d0b-cdb806936cd5/content.csv), [[LAB] Requirements — Requirements Table (table)](/packages/EBSD_300/artifacts/2026-06/db738ce2-e5e6-4198-9e58-5adbcce9f5b2/content.csv)
