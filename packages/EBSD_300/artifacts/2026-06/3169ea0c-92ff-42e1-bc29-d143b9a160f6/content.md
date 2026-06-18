@@ -33,3 +33,15 @@ During authoring, validation only reports what is broken, not what is correct. A
 Recommendation: Extend the validate_routine_def response to include a "passed" array listing fields that were verified clean, in addition to "errors" and "warnings". Alternatively, provide a --verbose mode.
 
 **References:** [Extract Requirements from Needs Diagram (routine_def)](/packages/EBSD_300/artifacts/2026-06/434be3f3-e826-41cf-af6a-31875f5b6aed/content.json)
+
+---
+
+## 2026-06-18T12:42:09Z — issue
+
+ISSUE-RD-003 | pre_flight_checks field name inconsistency between system prompt and schema validator.
+
+The KP system prompt (v4) documents the pre-flight block as "pre_flight_checks", but the validate_routine_def server reports the correct field name as "pre_flight" and the summary key "has_pre_flight". Writing "pre_flight_checks" caused the validator to silently ignore the block (has_pre_flight: false) on the first attempt, with no warning raised.
+
+Recommendation: (a) Align system prompt documentation to use "pre_flight" consistently, OR (b) have the validator emit a warning when it detects an unrecognised top-level key inside routine_def (such as "pre_flight_checks") that looks like a near-miss for a known field.
+
+**References:** [Extract Requirements from Needs Diagram (routine_def)](/packages/EBSD_300/artifacts/2026-06/434be3f3-e826-41cf-af6a-31875f5b6aed/content.json)
