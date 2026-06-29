@@ -1,0 +1,102 @@
+{
+  "package": "EBSD_300",
+  "entry_count": 12,
+  "entries": [
+    {
+      "id": "note-0001-81ab9af67b844ff3be5feffd1a064bdf",
+      "type": "milestone",
+      "timestamp": "2026-06-18T12:41:44Z",
+      "title": "Session established. Cloned EBSD_300 on master. Browsed LA d",
+      "tags": [],
+      "file_path": "entries/note-0001-81ab9af67b844ff3be5feffd1a064bdf.md"
+    },
+    {
+      "id": "note-0002-f32523abe40b413c99ee4afc008437d0",
+      "type": "issue",
+      "timestamp": "2026-06-18T12:41:54Z",
+      "title": "ISSUE-RD-001 | routine_def schema not documented in KP syste",
+      "tags": [],
+      "file_path": "entries/note-0002-f32523abe40b413c99ee4afc008437d0.md"
+    },
+    {
+      "id": "note-0003-e0f2f534085447f89a9b0c07b5b64e88",
+      "type": "issue",
+      "timestamp": "2026-06-18T12:42:01Z",
+      "title": "ISSUE-RD-002 | validate_routine_def returns all errors in a ",
+      "tags": [],
+      "file_path": "entries/note-0003-e0f2f534085447f89a9b0c07b5b64e88.md"
+    },
+    {
+      "id": "note-0004-3489cddc303f4146adfeed1d4fc0bc91",
+      "type": "issue",
+      "timestamp": "2026-06-18T12:42:09Z",
+      "title": "ISSUE-RD-003 | pre_flight_checks field name inconsistency be",
+      "tags": [],
+      "file_path": "entries/note-0004-3489cddc303f4146adfeed1d4fc0bc91.md"
+    },
+    {
+      "id": "note-0005-8da77a467a1d4cfea93e86380d2ad7a6",
+      "type": "issue",
+      "timestamp": "2026-06-18T12:42:17Z",
+      "title": "ISSUE-RD-004 | No dry-run or render-only mode for routine_de",
+      "tags": [],
+      "file_path": "entries/note-0005-8da77a467a1d4cfea93e86380d2ad7a6.md"
+    },
+    {
+      "id": "note-0006-9983f610a2b641f987f781f1e82075f8",
+      "type": "issue",
+      "timestamp": "2026-06-18T12:42:26Z",
+      "title": "ISSUE-RD-005 | Routine Execution Protocol (step 4) assumes a",
+      "tags": [],
+      "file_path": "entries/note-0006-9983f610a2b641f987f781f1e82075f8.md"
+    },
+    {
+      "id": "note-0007-ffbc33559f674698afa404dacb27f0f0",
+      "type": "issue",
+      "timestamp": "2026-06-18T12:42:34Z",
+      "title": "ISSUE-RD-006 | No standard pattern for the post-execution su",
+      "tags": [],
+      "file_path": "entries/note-0007-ffbc33559f674698afa404dacb27f0f0.md"
+    },
+    {
+      "id": "note-0008-b01294f5e5f44a809dda8fb5e2542835",
+      "type": "milestone",
+      "timestamp": "2026-06-18T13:24:12Z",
+      "title": "Routine extract_requirements_from_diagram_v1 completed \u2014 ext",
+      "tags": [],
+      "file_path": "entries/note-0008-b01294f5e5f44a809dda8fb5e2542835.md"
+    },
+    {
+      "id": "note-0009-12ef0a88deec47aea2ae800206714612",
+      "type": "milestone",
+      "timestamp": "2026-06-18T13:26:30Z",
+      "title": "First successful execution of generalised routine extract_re",
+      "tags": [],
+      "file_path": "entries/note-0009-12ef0a88deec47aea2ae800206714612.md"
+    },
+    {
+      "id": "obs-0001-9502107b170f4dd4aa2994054540a019",
+      "type": "observation",
+      "timestamp": "2026-06-18T13:26:44Z",
+      "title": "OBS-EBSD-001 \u00b7 Routine generalisation confirmed \u2014 extract_re",
+      "tags": [],
+      "file_path": "entries/obs-0001-9502107b170f4dd4aa2994054540a019.md"
+    },
+    {
+      "id": "obs-0002-7b306cc0c1a94defa76b8a7a043d4584",
+      "type": "observation",
+      "timestamp": "2026-06-18T13:33:51Z",
+      "title": "OBS-EBSD-002 \u00b7 Flagship LLM + MCP vs. notebook-with-tuning a",
+      "tags": [],
+      "file_path": "entries/obs-0002-7b306cc0c1a94defa76b8a7a043d4584.md"
+    },
+    {
+      "id": "note-0010-16dc84745f294e1faee260f04da9b905",
+      "type": "milestone",
+      "timestamp": "2026-06-18T13:52:51Z",
+      "title": "Needs vs Requirements Impact Analysis completed and saved as",
+      "tags": [],
+      "file_path": "entries/note-0010-16dc84745f294e1faee260f04da9b905.md"
+    }
+  ]
+}
