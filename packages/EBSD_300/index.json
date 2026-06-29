@@ -1,6 +1,6 @@
 {
   "package": "EBSD_300",
-  "entry_count": 13,
+  "entry_count": 14,
   "entries": [
     {
       "id": "note-0001-81ab9af67b844ff3be5feffd1a064bdf",
@@ -105,6 +105,14 @@
       "title": "EBSD_300 work log migrated from monolithic log_book artifact",
       "tags": [],
       "file_path": "entries/note-0005-7072cd6587994150ae5896a861a02063.md"
+    },
+    {
+      "id": "note-0006-6ddb233ebf854ec996fc73c8b78fa7b8",
+      "type": "milestone",
+      "timestamp": "2026-06-29T17:10:18Z",
+      "title": "Artifact viewer URL now returned in add_log_entry response a",
+      "tags": [],
+      "file_path": "entries/note-0006-6ddb233ebf854ec996fc73c8b78fa7b8.md"
     }
   ]
 }
